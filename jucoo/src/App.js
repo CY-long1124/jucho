@@ -4,24 +4,33 @@ import './App.css';
 import {
   connect
 } from 'react-redux'
+import {
+  BrowserRouter as Router,
+  Route,
+  NavLink
+} from 'react-router-dom'
+import BottomNav from './components/bottomNav'
+import Jucheng from './views/jucheng'
+import Theatre from './views/theatre'
+import Eticket from './views/eticket'
+import Myjuooo from './views/myjuooo'
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-      
-        </a>
-      </header>
+      <Router>
+        <NavLink to={"/" }></NavLink>
+        <NavLink to={"/theatre" }></NavLink>
+        <NavLink to={"/eticket" }></NavLink>
+        <NavLink to={"/myjuooo" }></NavLink>
+
+        <Route path="/" exact component={Jucheng}></Route>
+        <Route path="/theatre" component={Theatre}></Route>
+        <Route path="/eticket" component={Eticket}></Route>
+        <Route path="/myjuooo" component={Myjuooo}></Route>
+
+      </Router>
+      <BottomNav></BottomNav>
     </div>
   );
 }
