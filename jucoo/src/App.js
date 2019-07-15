@@ -14,6 +14,8 @@ import Jucheng from './views/jucheng'
 import Theatre from './views/theatre'
 import Eticket from './views/eticket'
 import Myjuooo from './views/myjuooo'
+import ShowsLibrary from './views/showsLibrary'
+import Tourshowinfo from './views/tourshowinfo'
 
 function App() {
   return (
@@ -23,14 +25,21 @@ function App() {
         <NavLink to={"/theatre" }></NavLink>
         <NavLink to={"/eticket" }></NavLink>
         <NavLink to={"/myjuooo" }></NavLink>
+        <NavLink to={"/showsLibrary" }></NavLink>
+        <NavLink to={"/tourshowinfo" }></NavLink>
+
+
 
         <Route path="/" exact component={Jucheng}></Route>
         <Route path="/theatre" component={Theatre}></Route>
         <Route path="/eticket" component={Eticket}></Route>
         <Route path="/myjuooo" component={Myjuooo}></Route>
+        <Route path="/showsLibrary" component={ShowsLibrary}></Route>
+        <Route path="/tourshowinfo" component={Tourshowinfo}></Route>
 
+
+        <BottomNav></BottomNav>
       </Router>
-      <BottomNav></BottomNav>
     </div>
   );
 }
