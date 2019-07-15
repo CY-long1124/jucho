@@ -18,6 +18,7 @@ import ShowsLibrary from './views/showsLibrary'
 import Tourshowinfo from './views/tourshowinfo'
 import Login from './views/login'
 import Register from './views/register'
+import Showinfo from './views/showinfo'
 function App() {
   return (
     <div className="App">
@@ -43,6 +44,7 @@ function App() {
         <Route path="/register" component={Register}></Route>
         <Route path="/showsLibrary" component={ShowsLibrary}></Route>
         <Route path="/tourshowinfo" component={Tourshowinfo}></Route>
+        <Route path="/showinfo" component={Showinfo}></Route>
 
 
         <BottomNav></BottomNav>
