@@ -16,7 +16,8 @@ import Eticket from './views/eticket'
 import Myjuooo from './views/myjuooo'
 import ShowsLibrary from './views/showsLibrary'
 import Tourshowinfo from './views/tourshowinfo'
-
+import Login from './views/login'
+import Register from './views/register'
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,10 @@ function App() {
         <NavLink to={"/myjuooo" }></NavLink>
         <NavLink to={"/showsLibrary" }></NavLink>
         <NavLink to={"/tourshowinfo" }></NavLink>
+        <NavLink to={"/login" }></NavLink>
+        <NavLink to={"/register" }></NavLink>
+
+
 
 
 
@@ -34,6 +39,8 @@ function App() {
         <Route path="/theatre" component={Theatre}></Route>
         <Route path="/eticket" component={Eticket}></Route>
         <Route path="/myjuooo" component={Myjuooo}></Route>
+        <Route path="/login" component={Login}></Route>
+        <Route path="/register" component={Register}></Route>
         <Route path="/showsLibrary" component={ShowsLibrary}></Route>
         <Route path="/tourshowinfo" component={Tourshowinfo}></Route>
 
