@@ -1,0 +1,5 @@
+const GET_SHOWCATEGROY="GET_SHOWCATEGROY";
+
+export default {
+    GET_SHOWCATEGROY
+}
