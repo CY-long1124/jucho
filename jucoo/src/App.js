@@ -47,7 +47,7 @@ function App() {
         <Route path="/showinfo" component={Showinfo}></Route>
 
 
-        <BottomNav></BottomNav>
+        {/*<BottomNav></BottomNav>*/}
       </Router>
     </div>
   );

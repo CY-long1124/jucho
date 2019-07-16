@@ -8,15 +8,18 @@ import {
 } from "redux"
 import showinfoCreator from "../store/actionCreator/showinfoCreator"
 import ShowinfoHeader from "../components/showinfo/showinfo-header"
+import ShowinfoMain from "../components/showinfo/showinfo-main"
 class Showinfo extends React.Component{
     constructor(){
         super();
     }
     render(){
         return (
-            <div>
+            <div className="detail">
                 {/*头部信息*/}
                 <ShowinfoHeader/>
+                {/*描述区*/}
+                <ShowinfoMain/>
             </div>
         )
     }

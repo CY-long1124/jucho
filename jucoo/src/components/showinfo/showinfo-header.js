@@ -39,8 +39,27 @@ class ShowinfoHeader extends React.Component{
                        </div>
                    </div>
                </div>
+               {/*定位*/}
                <div className="brief__secondary">
-
+                    <div className="brief__secondary__info">
+                        <div className="brief__secondary__info__date-time">
+                            <span>{"08/24"}</span>
+                            <span>{"周六"}</span>
+                        </div>
+                        <div className="brief__secondary__info__place">
+                            陵水 | 雅居乐海上艺术中心
+                        </div>
+                    </div>
+                   <div className="brief__secondary__pointer"> </div>
+               </div>
+               {/*立即办卡*/}
+               <div className="detail__plus-tips">
+                    <div className="orange-plus-tips">
+                        <div className="orange-plus-tips__name">橙PLUS卡</div>
+                        <div className="orange-plus-tips__desc">开通送￥100</div>
+                        <div className="orange-plus-tips__guide">立即开卡</div>
+                        <div className="orange-plus-tips__arrow">{">"}</div>
+                    </div>
                </div>
            </div>
         )
