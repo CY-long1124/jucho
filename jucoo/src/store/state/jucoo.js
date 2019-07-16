@@ -1,4 +1,4 @@
-const showinfo = [];
+const showinfoState = [];
 export default {
-    showinfo
+    showinfoState
 }

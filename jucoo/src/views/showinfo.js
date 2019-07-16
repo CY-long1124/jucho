@@ -6,7 +6,7 @@ import {
 import {
     bindActionCreators
 } from "redux"
-import jucooCreator from "../store/actionCreator/jucoo"
+import showinfoCreator from "../store/actionCreator/showinfoCreator"
 class Showinfo extends React.Component{
     constructor(){
         super();
@@ -27,9 +27,9 @@ class Showinfo extends React.Component{
     }
 }
 function mapStateToProps(state) {
-    console.log(state.jucoo.showinfo,"yyy");
+    console.log(state.showinfoReducer.showinfoState,"yyy");
     return{
-        showinfo:state.jucoo.showinfo
+        showinfoState:state.showinfoReducer.showinfoState
     }
 }
-export default connect(mapStateToProps,dispatch=>bindActionCreators(jucooCreator,dispatch))(Showinfo) ;
+export default connect(mapStateToProps,dispatch=>bindActionCreators(showinfoCreator,dispatch))(Showinfo) ;
