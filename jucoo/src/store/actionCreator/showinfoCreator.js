@@ -11,8 +11,10 @@ export default {
     },
     getShowInfo(){
         return (dispatch)=>{
-            axios.get("/jucoo/Schedule/Schedule/getScheduleInfo?schedular_id=103174&version=6.0.1&referer=2").then(({data})=>{
+            axios.get("/jucoo/Schedule/Schedule/getScheduleInfo?schedular_id=103174").then(({data})=>{
                 // console.log(data.data,"eee");
+                // localStorage.clear();
+                // localStorage.data = data.data;
                 this.updateShowInfo(data.data)
             })
         }

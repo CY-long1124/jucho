@@ -2,5 +2,28 @@
     display: flex;
     justify-content: space-around;
     list-style: none;
-    
+    text-align: center;
+    margin-left: -30px;
+}
+.bott li {
+    width: 93px;
+    height: 42px;
+}
+.hasColor{
+    height: 40px;
+    width: 60px;
+    overflow: hidden;
+}
+.hasColorImg{
+    height: 80px;
+    margin-top:-40px;
+    margin-left: 20px;
+}
+.noColorImg{
+    height: 80px;
+    margin-left: 20px;
+}
+.bott li span {
+    display: block;
+    margin-left: -16px;
 }
