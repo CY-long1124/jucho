@@ -1,0 +1,14 @@
+.classfy{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top : 20px;
+}
+.classfy div img{
+    width: 51px;
+    height: 51px;
+}
+.classfy div span{
+    display: block;
+}
