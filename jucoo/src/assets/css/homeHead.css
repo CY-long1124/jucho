@@ -1,0 +1,57 @@
+.father{
+    position: relative;
+    overflow: hidden;
+}
+.homeHead{
+    display: flex;
+
+    justify-content: space-around;
+    padding: 7px 15px;
+    position: fixed;
+    top:0;
+}
+.pic-icon{
+    width: 58px;
+    height: 28px;
+    margin-right: 10px;
+    border: 1px solid hsla(0,0%,88%,.3);
+    border-radius: 15px; 
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    padding-top: 2px;
+    box-sizing: border-box; 
+}
+.pic-icon i {
+    font-size: 16px;
+    color: #fefefe;
+}
+.pic-icon span{
+    font-size: 16px;
+    color: #fefefe;
+}
+.search{
+    width: 240px;
+    height: 28px;  
+    border: 1px solid hsla(0,0%,88%,0.2);
+    background-color: rgba(0,0,0,0.2);
+    padding: 2px 0 5px 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-right: 10px;
+
+}
+.search span{
+    font-size: 16px;
+    color: #fefefe;
+}
+.search span:first-child{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.headPic{
+    width: 27px;
+    height: 28px;
+}
+.headPic img{
+    height: 100%;
+}

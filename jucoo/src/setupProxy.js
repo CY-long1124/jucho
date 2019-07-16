@@ -7,4 +7,11 @@ module.exports = function (app) {
             "^/jucoo":""
         }
     }))
+    app.use("/juco",proxy({
+        target:"https://m.juooo.com",
+        changeOrigin:true,
+        pathRewrite:{
+            "^/juco":""
+        }
+    }))
 };
