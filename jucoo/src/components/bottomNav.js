@@ -21,7 +21,7 @@ class BottomNav extends React.Component{
                 {
                     name:"票夹",
                     pic:"https://image.juooo.com//group1/M00/02/71/rAoKNVwRraqAMv3SAAAIdQJTBKA919.png",
-                    url:"/eticket"
+                    url:"/login"
                 },
                 {
                     name:"我的",

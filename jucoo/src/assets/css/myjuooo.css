@@ -1,0 +1,9 @@
+.info_body{
+	width:100%;
+}
+.main_info{
+	background-image: url(../img/myjuooo.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height:210px;
+}
