@@ -6,5 +6,14 @@ module.exports = function (app) {
         pathRewrite:{
             "^/jucoo":""
         }
+    }));
+	app.use(proxy("/juco",{
+        target:"https://m.juooo.com",
+        changeOrigin:true,
+        pathRewrite:{
+            "^/juco":""
+        }
     }))
 };
+
+
