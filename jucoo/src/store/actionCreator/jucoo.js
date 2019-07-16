@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import jucooType from "../actionType/jucoo"
 import axios from "axios"
 export default {
@@ -18,3 +19,5 @@ export default {
         }
     }
 }
+=======
+>>>>>>> 95382a1ed49aa9038b0801d9e88936f266534bf8

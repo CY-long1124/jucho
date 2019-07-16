@@ -1,4 +1,7 @@
-const showinfo = [];
+const showinfoState = [];
+const classfyList = [];
+
 export default {
-    showinfo
+    showinfoState,
+    classfyList
 }

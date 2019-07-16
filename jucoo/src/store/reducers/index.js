@@ -6,9 +6,11 @@ import {
 import jucoo from './jucoo';
 import showCategory  from "./showCategory";
 import showsLibrary from "./showsLibrary";
+import classfy from './classfy'
 
 export default combineReducers({
     jucoo,
     showCategory,
-    showsLibrary
+    showsLibrary,
+    classfy
 })

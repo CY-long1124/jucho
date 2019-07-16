@@ -6,23 +6,55 @@ import '../assets/css/BottomNav.css'
 class BottomNav extends React.Component{
     constructor(){
         super();
+        this.state = {
+            bottom_slide_list : [
+                {
+                    name:"首页",
+                    pic:"https://image.juooo.com//group1/M00/01/81/rAoKmVuQecmATGXZAAAUKcf_gA0402.png",
+                    url:"/"
+                },
+                {
+                    name:"剧院",
+                    pic:"https://image.juooo.com//group1/M00/02/7F/rAoKNVwtUeGAOGfGAAAKR4Zrvs0487.png",
+                    url:"/theatre"
+                },
+                {
+                    name:"票夹",
+                    pic:"https://image.juooo.com//group1/M00/02/71/rAoKNVwRraqAMv3SAAAIdQJTBKA919.png",
+                    url:"/login"
+                },
+                {
+                    name:"我的",
+                    pic:"https://image.juooo.com//group1/M00/01/81/rAoKmVuQedqADpfXAAAQDvkHt5o350.png",
+                    url:"/myjuooo"
+                }
+            ],
+            index:0,
+        }
     }
     render(){
         return (
-            <div>
+            <div className="bootomNav">
                 <ol className="bott">
-                    <li onClick={()=>{
-                        this.props.history.push("/")
-                    }}>聚橙</li>
-                    <li onClick={()=>{
-                        this.props.history.push("/theatre")
-                    }}>剧院</li>
-                    <li onClick={()=>{
-                        this.props.history.push("/eticket")
-                    }}>票夹</li>
-                    <li onClick={()=>{
-                        this.props.history.push("/myjuooo")
-                    }}>我的</li>
+                    
+                    {
+                        this.state.bottom_slide_list.map((v,i)=>{
+                            return (
+                                <li key={i}  onClick={()=>{
+                                    this.props.history.push(v.url);
+                                    this.setState({
+                                        index : i
+                                    })
+                                }}>
+                                    
+                                    <div className="hasColor">
+                                        <img src={v.pic} alt=""  className={this.state.index === i?"hasColorImg":"noColorImg"}/>
+                                    </div>
+                                    <span>{v.name}</span>
+                                </li>
+                            )
+                        })
+                    }
                 </ol>
             </div>
         )

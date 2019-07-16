@@ -6,18 +6,20 @@ import {
 import {
     bindActionCreators
 } from "redux"
-import jucooCreator from "../store/actionCreator/jucoo"
+import showinfoCreator from "../store/actionCreator/showinfoCreator"
+import ShowinfoHeader from "../components/showinfo/showinfo-header"
+import ShowinfoMain from "../components/showinfo/showinfo-main"
 class Showinfo extends React.Component{
     constructor(){
         super();
     }
     render(){
         return (
-            <div>
-                {/*头部广告引入*/}
-                <div className="brief__primary">
-
-                </div>
+            <div className="detail">
+                {/*头部信息*/}
+                <ShowinfoHeader/>
+                {/*描述区*/}
+                <ShowinfoMain/>
             </div>
         )
     }
@@ -27,9 +29,9 @@ class Showinfo extends React.Component{
     }
 }
 function mapStateToProps(state) {
-    console.log(state.jucoo.showinfo,"yyy");
+    // console.log(state.showinfoReducer.showinfoState,"yyy");
     return{
-        showinfo:state.jucoo.showinfo
+        showinfoState:state.showinfoReducer.showinfoState
     }
 }
-export default connect(mapStateToProps,dispatch=>bindActionCreators(jucooCreator,dispatch))(Showinfo) ;
+export default connect(mapStateToProps,dispatch=>bindActionCreators(showinfoCreator,dispatch))(Showinfo) ;
