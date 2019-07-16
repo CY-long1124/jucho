@@ -26,7 +26,7 @@
     color: #fefefe;
 }
 .pic-icon span{
-    font-size: 16px;
+    font-size: 14px;
     color: #fefefe;
 }
 .search{
@@ -41,7 +41,7 @@
 
 }
 .search span{
-    font-size: 16px;
+    font-size: 14px;
     color: #fefefe;
 }
 .search span:first-child{
@@ -54,4 +54,13 @@
 }
 .headPic img{
     height: 100%;
+}
+.adver{
+    width: 347px;
+    height: 102px;
+    margin-top:30px;
+    margin-left:15px;
+}
+.adver img{
+    width: 100%;
 }

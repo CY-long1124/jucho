@@ -7,17 +7,19 @@ import {
     bindActionCreators
 } from "redux"
 import showinfoCreator from "../store/actionCreator/showinfoCreator"
+import ShowinfoHeader from "../components/showinfo/showinfo-header"
+import ShowinfoMain from "../components/showinfo/showinfo-main"
 class Showinfo extends React.Component{
     constructor(){
         super();
     }
     render(){
         return (
-            <div>
-                {/*头部广告引入*/}
-                <div className="brief__primary">
-
-                </div>
+            <div className="detail">
+                {/*头部信息*/}
+                <ShowinfoHeader/>
+                {/*描述区*/}
+                <ShowinfoMain/>
             </div>
         )
     }
@@ -27,7 +29,7 @@ class Showinfo extends React.Component{
     }
 }
 function mapStateToProps(state) {
-    console.log(state.showinfoReducer.showinfoState,"yyy");
+    // console.log(state.showinfoReducer.showinfoState,"yyy");
     return{
         showinfoState:state.showinfoReducer.showinfoState
     }

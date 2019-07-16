@@ -1,4 +1,7 @@
 const showinfoState = [];
+const classfyList = [];
+
 export default {
-    showinfoState
+    showinfoState,
+    classfyList
 }
