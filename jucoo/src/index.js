@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import store from './store/index';
+import './assets/iconfont/iconfont.css'
 import {
     Provider
 } from 'react-redux';
