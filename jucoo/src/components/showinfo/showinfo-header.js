@@ -25,7 +25,7 @@ class ShowinfoHeader extends React.Component{
                            <div className="brief__primary__fg__content">
                                <div className="brief__primary__fg__content__cover">
                                    {/*<img src={this.props.showinfoState.static_data?this.props.showinfoState.static_data.pic:""} alt=""/>*/}
-                                   <img src="https://image.juooo.com/group1/M00/03/4E/rAoKNVzs2YSALRTYAABqw2z2T5E740.jpg" alt=""/>
+                                   <img className="img" src="https://image.juooo.com/group1/M00/03/4E/rAoKNVzs2YSALRTYAABqw2z2T5E740.jpg" alt=""/>
                                </div>
                                <div className="brief__primary__fg__content__info">
                                    <div className="brief__primary__fg__content__info__name">

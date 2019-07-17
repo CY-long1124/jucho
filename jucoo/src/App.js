@@ -36,7 +36,7 @@ function App() {
 
 
 
-
+				
 
         <Route path="/" exact component={Jucheng}></Route>
         <Route path="/theatre" component={Theatre}></Route>
@@ -51,7 +51,7 @@ function App() {
         <Route path="/showinfo" component={Showinfo}></Route>
 
 
-        {/*<BottomNav></BottomNav>*/}
+        <BottomNav></BottomNav>
       </Router>
     </div>
   );

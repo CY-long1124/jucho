@@ -6,7 +6,8 @@ module.exports = function (app) {
         pathRewrite:{
             "^/jucoo":""
         }
-    })),
+    }));
+
     app.use(proxy("/juco",{
         target:"https://m.juooo.com",
         //target:"http://127.0.0.1",
@@ -15,4 +16,10 @@ module.exports = function (app) {
             "^/juco":""
         }
     }))
+<<<<<<< HEAD
 };
+=======
+};
+
+
+>>>>>>> 9637c57866dd04d965c16d589a549ca760f284fe

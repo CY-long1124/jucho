@@ -9,6 +9,8 @@ import {
 import showinfoCreator from "../store/actionCreator/showinfoCreator"
 import ShowinfoHeader from "../components/showinfo/showinfo-header"
 import ShowinfoMain from "../components/showinfo/showinfo-main"
+import ShowinfoTour from "../components/showinfo/showinfo-tour"
+import ShowinfoRecommend from "../components/showinfo/shoeinfo-recommend"
 class Showinfo extends React.Component{
     constructor(){
         super();
@@ -20,6 +22,10 @@ class Showinfo extends React.Component{
                 <ShowinfoHeader/>
                 {/*描述区*/}
                 <ShowinfoMain/>
+                {/*巡演城市*/}
+                <ShowinfoTour/>
+                {/*相关推荐*/}
+                <ShowinfoRecommend/>
             </div>
         )
     }
