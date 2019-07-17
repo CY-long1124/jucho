@@ -27,7 +27,7 @@ a{
 	border:none;
 	
 }
-h2{
+/* h2{
 	font-size: 23px;
 	font-weight: 1000;
 	margin:25px 0 5px 0;
@@ -39,7 +39,7 @@ span{
 	float: left;
 	text-align: left;
 	color:#222
-}
+} */
 #icon{
 	float:right;
 	margin:40px 20px 0 0;
