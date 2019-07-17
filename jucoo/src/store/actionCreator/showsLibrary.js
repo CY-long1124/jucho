@@ -7,9 +7,14 @@ export default {
             payload
         }
     },
-    getLibraryList(page = 1 / 1) {
+    
+    getLibraryList({
+       page : page = 1,
+       category: category = 0/1
+    }) {
+
         return ((dispatch) => {
-            axios.get("https://m.juooo.com/Search/getShowList?category=37&city_id=0&page=" + page)
+            axios.get("https://m.juooo.com/Search/getShowList?category="+ category +"&city_id=0&page=" + page)
                 .then(({
                     data
                 }) => {

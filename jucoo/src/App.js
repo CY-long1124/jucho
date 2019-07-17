@@ -9,6 +9,8 @@ import {
   Route,
   NavLink
 } from 'react-router-dom'
+
+import router from "./router"
 import BottomNav from './components/bottomNav'
 import Jucheng from './views/jucheng'
 import Theatre from './views/theatre'
@@ -35,6 +37,7 @@ function App() {
         <NavLink to={"/tourshowinfo" }></NavLink>
         <NavLink to={"/login" }></NavLink>
         <NavLink to={"/register" }></NavLink>
+
 				<NavLink to={"/theatreStyleCenter"}></NavLink>
 				
 
@@ -54,6 +57,19 @@ function App() {
         <Route path="/showinfo" component={Showinfo}></Route>
 				<Route path="/theatreStyleCenter" component={TheatreStyleCenter}></Route>
 					
+
+				{
+					router.map((v,i)=>{
+						return(
+						<div>
+							<Route key={i} path={v.path} component={v.component} exact={v.exact}></Route>
+							
+						</div>
+							
+						)
+					})
+				}
+
         <BottomNav></BottomNav>
       </Router>
     </div>
