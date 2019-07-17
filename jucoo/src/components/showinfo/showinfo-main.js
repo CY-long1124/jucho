@@ -35,9 +35,9 @@ class showinfoMain extends React.Component{
                         <span className="show-benefit-item__name">支 持</span>
                         <span className="show-benefit-item__colon">：</span>
                         <div className="support__list">
-                            <span>在线选座</span><span>|</span>
-                            <span>电子票</span><span>|</span>
-                            <span>同城满200免邮</span><span>|</span>
+                            <span className="support__list__span">在线选座</span><span className="support__list__span">|</span>
+                            <span className="support__list__span">电子票</span><span className="support__list__span">|</span>
+                            <span className="support__list__span">同城满200免邮</span>
                         </div>
                     </div>
                 </div>

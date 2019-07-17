@@ -53,7 +53,7 @@ class Show extends React.Component{
     );
 }
 componentWillMount(){
-  this.props.getLibraryList(); 
+  this.props.getLibraryList({}); 
   //this.props.getCategoryList();
 }
 }

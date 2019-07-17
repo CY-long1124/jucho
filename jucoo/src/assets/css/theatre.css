@@ -1,24 +1,44 @@
-.logo{
-	width:90%;
-	height:300px;
-	/* background:red; */
-	margin:16px 16px 0 16px;
-	border:1px solid #ccc;
-	box-shadow: 0 0 6px;
-	
+.theatre_s{
+	background:#fafafa;
 }
 
-a{
+.theatre_log{
+	width:100%;
+	height:45px;
+	background:#fafafa;
+	border-bottom:1px solid #ccc;
+}
+.theatre_log span{
+	color:#232323;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+	margin:0 160px;
+}
+.theatre_logo{
+	width:90%;
+	height:310px;
+	margin:16px 16px 0 16px;
+	border:1px solid #ccc;
+	/* box-shadow: 2px 2px 10px; */
+	background:#fff;
+	
+		
+}
+.theatre_logo_Top{
+	height:95px;
+	/* background:red; */
+}
+
+.theatre_logo_Top a{
 	text-decoration:none;
 	color:#000;
 	float:left;
-	/* background:#999; */
-	/* margin:10px 0 */
 	}
 
 
 
-.pic{
+.theatre_pic{
 	width:70px;
 	height:70px;
 	float:left;
@@ -27,19 +47,21 @@ a{
 	border:none;
 	
 }
-/* h2{
-	font-size: 23px;
+
+.theatre_logo_Top h2{
+	font-size: 18px;
 	font-weight: 1000;
-	margin:25px 0 5px 0;
+	margin:30px 0 5px 0;
 }
 
-span{
-	font-size: 15px;
-	font-weight:100;
+.theatre_logo_Top span{
+	font-size: 13px;
+	font-weight:500;
 	float: left;
 	text-align: left;
 	color:#222
-} */
+} 
+
 #icon{
 	float:right;
 	margin:40px 20px 0 0;
@@ -53,22 +75,55 @@ span{
 	width:10%;
 	hight:60px
 }
-.logoTop{
+.theatre_logo_Top{
 	/* background:#999; */
-	height:110px;
+	height:105px;
 	overflow: hidden;
 }
-
-.logobottom{
-	background:#999;
-	width:1000%;
-	/* height:188px; */
-
+.theatre_logo_bottom{
+	width:92%;
+	height:200px;
+	/* background:#000000; */
+	position: relative;
+	margin:0px 15px;
+	position:relative;
+	overflow-x: scroll;
+}
+.theatre_bottom{
+	position:relative;
+	width:365%;
+	height:185px;
+	/* background:#999; */
+	position: relative;
+	overflow-x: scroll;
+	
+}
+.theatre_z_bottom{
+	height:178px; 
+	overflow: hidden;
+	display: inline-block;
+	float:left;
+	text-align: center;
 }
 
-.logobottom img{
-	height:150px;
-	width:90px;
-	padding:0 11px;
+.theatre_bottom img{
+	height:145px;
+	width:95px;
 	float: left;
+	padding:20px 8px
 }
+.n_ew{
+	color:#b3b3b3;
+	font-size: 15px;
+	padding:0 0 10px 0;
+}
+.theatre_z_bottom hr{
+	color:#b3b3b3;
+}
+
+
+
+
+
+
+

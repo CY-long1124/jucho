@@ -321,3 +321,165 @@
     height: 25px;
     line-height: 25px;
 }
+.support__list__span{
+    display: inline-block;
+    font-size: 14px;
+    color: #999;
+    padding-left: 17px;
+}
+.tour-cities{
+    /*height: 167px;*/
+    background: #fefefe;
+    overflow: hidden;
+    margin-top: 13px;
+}
+.tour-cities__desc{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.tour-cities__desc__title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #232323;
+}
+.tour-cities__desc__count__num{
+    color: #ff6743;
+}
+.tour-cities__desc__count__arrow{
+    margin-top: 2px;
+    font-size: 12px;
+    color: #333333;
+    padding-right: 5px;
+}
+.tour-cities__list{
+    overflow-x: scroll
+}
+.tour-cities__list__content{
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    height: 78px;
+}
+.tour-cities__list__content__item--actived{
+    border: .02667rem solid #ff6743;
+}
+.tour-cities__list__content__item{
+    width: 97px;
+    height: 67px;
+    margin-left: 13px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    color: #ebebeb;
+    border:2px solid #ebebeb;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tour-cities__list__content__item__city{
+    margin-top: 2px;
+    color: #232323;
+    font-weight: 700;
+    font-size:18px;
+    height: 25px;
+    line-height: 25px;
+}
+.tour-cities__list__content__item__date{
+    color: #666;
+    font-size: 14px;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 6px;
+}
+.intro{
+    height: 700px;
+    width: 100%;
+    background-color:white;
+    padding: 0 16.5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 13.3px;
+    position: relative;
+}
+.intro__title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #232323;
+    margin-top:26px;
+}
+.intro__content{
+    margin-top: 20px;
+    padding-bottom:24px;
+}
+.intro__content p{
+    font-size: 16px;
+    line-height:30px;
+    color: #232323;
+}
+.intro__mask{
+    position: absolute;
+    top: 658px;
+    height: 43px;
+    width: 100%;
+    padding: 12px;
+    padding-right: 30px;
+    color: #ff6743;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 2;
+    background: white;
+}
+.intro__more{
+    top: 547px;
+    position: absolute;
+    width: 100%;
+    height: 43px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 53px;
+    font-weight: 700;
+    padding-top: 68px;
+    background-image: url(https://m.juooo.com/static/img/white-mask.ff6558e.png);
+    background-repeat: no-repeat;
+}
+.tips{
+    height:77px;
+    padding: 27px 16.5px 0;
+    background: #fefefe;
+    margin-top: 13.3px;
+}
+.tips__title{
+    display: flex;
+    justify-content: space-between;
+    height: 22px;
+    line-height: 22px;
+    align-items: center;
+}
+.tips__title span{
+    font-size: 22px;
+    font-weight: 700;
+    color: #232323;
+}
+.tips__list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+.tips__list span{
+    display: inline-block;
+    color: #999;
+    font-size: 14px;
+    height:14px;
+    line-height:14px;
+}
