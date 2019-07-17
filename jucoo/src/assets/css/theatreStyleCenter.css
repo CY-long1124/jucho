@@ -1,0 +1,69 @@
+.theatreStyleCenter{
+    width:100%;
+    height:50px;
+    /* background:#999; */
+	
+}
+.theatreStyleCenter_logo h2{
+	display: inline-block;
+    font-size: 20px;
+    line-height: 50px;
+	float: left;
+	padding:0 15px;
+}
+.theatreStyleCenter span{
+	font-size: 20px;
+	line-height: 50px;
+	float: left;
+	margin:0 80px;
+}
+
+.theatreStyleCenter h3{
+	float: left;
+	line-height: 50px;
+}
+
+.theatreStyle_img img{
+	width:100%;
+	height:170px;
+	
+}
+.theatreStyle_nav{
+	width:100%;
+	height:110px;
+	/* background:#999; */
+	padding:0 20px;
+	border:1px solid #fafafa;
+	box-sizing: border-box;
+}
+
+.the_nav_z{
+	/* background:#0074D9; */
+	width:52px;
+	height:85px;
+	float: left;
+	padding:0 10px;
+	margin:20px 5px 20px 5px;
+}
+.the_nav_z img{
+	font-size: 45px;
+	color:#6666;
+	width:55px;
+}
+
+.the_nav_z h5{
+	font-size: 15px;
+	margin:0 10px;
+}
+
+.theatar_show{
+	width:100%;
+	height:50px;
+	background:#0074D9;
+}
+.theatar_show h2{
+	font-size: 20px;
+	float: left;
+	line-height: 10px;
+	margin:0 15px;
+}

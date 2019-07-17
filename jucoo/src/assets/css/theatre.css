@@ -58,7 +58,7 @@
 	font-weight:500;
 	float: left;
 	text-align: left;
-	color:#222;
+	color:#888;
 }
 #icon{
 	float:right;
@@ -100,7 +100,7 @@
 	height:178px; 
 	overflow: hidden;
 	display: inline-block;
-	float:left;
+	/* float:left; */
 	text-align: center;
 }
 
