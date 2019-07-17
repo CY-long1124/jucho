@@ -30,7 +30,7 @@ class Classfy extends React.Component{
     
 }
 const mapStateToProps = (state) => {
-    console.log(state.classfy.classfyList)
+    // console.log(state.classfy.classfyList)
     return {
        classfyList : state.classfy.classfyList
     }
