@@ -25,10 +25,19 @@ class showinfoMain extends React.Component{
                     </div>
                     {/*入场*/}
                     <div className="show-benefit-item">
-                        <span className="show-benefit-item__name">VIP+</span>
+                        <span className="show-benefit-item__name">入 场</span>
                         <span className="show-benefit-item__colon">：</span>
                         <div className="enter">
                             {"1.1米以上或5周岁以上儿童凭票入场，其他儿童谢绝入场。"}
+                        </div>
+                    </div>
+                    <div className="show-benefit-item">
+                        <span className="show-benefit-item__name">支 持</span>
+                        <span className="show-benefit-item__colon">：</span>
+                        <div className="support__list">
+                            <span>在线选座</span><span>|</span>
+                            <span>电子票</span><span>|</span>
+                            <span>同城满200免邮</span><span>|</span>
                         </div>
                     </div>
                 </div>
