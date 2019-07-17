@@ -16,10 +16,6 @@ module.exports = function (app) {
             "^/juco":""
         }
     }))
-<<<<<<< HEAD
-};
-=======
 };
 
 
->>>>>>> 9637c57866dd04d965c16d589a549ca760f284fe
