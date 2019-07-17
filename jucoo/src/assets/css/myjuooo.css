@@ -6,4 +6,23 @@
 	background-size: 100%;
 	background-repeat: no-repeat;
 	height:210px;
+	overflow: hidden;
+}
+.main_info_main{
+	margin:0 20px;
+	height:210px;
+	margin-top: 56px;
+	box-sizing: border-box;
+	background: #fff;
+}
+.main_t{
+	padding:0 15px;
+	position: relative;
+	height:51px;
+}
+.main_t img{
+	width:58px;
+	height:58px;
+	margin-top: -14px;
+	vertical-align: middle;
 }
