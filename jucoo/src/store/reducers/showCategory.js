@@ -6,9 +6,9 @@ export default function (state=showCategoryState,{type,payload}){
     //console.log(payload,999999999999)
     if(type===showCategroyType.GET_SHOWCATEGROY){
         state.showCategoryList = payload.showCategoryList;
-        //state.afterShowCategoryList = payload.afterShowCategoryList
-        //console.log(state.showCategoryList,11111111111111)
+        state.category = payload.category;
+        state.page = payload.page;
     }
-    console.log(state)
+    //console.log(state)
     return state;
 }

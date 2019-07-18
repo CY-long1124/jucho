@@ -1,6 +1,8 @@
 const showCategoryList = [];
-//const afterShowCategoryList=[];
+const category={};
+const page={};
 export default {
     showCategoryList,
-    //afterShowCategoryList
+    category,
+    page
 }

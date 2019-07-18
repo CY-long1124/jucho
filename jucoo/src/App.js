@@ -25,6 +25,7 @@ import Search from './views/search'
 import TheatreStyleCenter from './views/theatreStyleCenter'
 
 
+
 class App extends React.Component{
 		render(){
 			return (
@@ -59,5 +60,6 @@ class App extends React.Component{
 			)
 		}
 }
+
 
 export default connect()(App);
