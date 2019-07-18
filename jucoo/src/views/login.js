@@ -4,6 +4,13 @@ class Login extends React.Component{
     constructor(){
         super();
     }
+	change_title(e){
+			if(e.target.innerText=="验证码登录"){
+				e.target.innerText="密码登录"
+			}else{
+				e.target.innerText="验证码登录"
+			}
+	}
     render(){
         return (
             <div className="login">
@@ -27,7 +34,7 @@ class Login extends React.Component{
 						</div>
 						<div className="other">
 							<span>邮箱注册</span>
-							<span>密码登录</span>
+							<span onClick={this.change_title.bind(this)}>密码登录</span>
 						</div>
 					</div>
 				</div>

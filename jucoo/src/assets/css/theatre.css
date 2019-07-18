@@ -47,6 +47,8 @@
 	border:none;
 	
 }
+
+
 .theatre_logo_Top h2{
 	font-size: 18px;
 	font-weight: 1000;
@@ -58,8 +60,9 @@
 	font-weight:500;
 	float: left;
 	text-align: left;
-	color:#222;
+	color:#888;
 }
+
 #icon{
 	float:right;
 	margin:40px 20px 0 0;
@@ -100,7 +103,7 @@
 	height:178px; 
 	overflow: hidden;
 	display: inline-block;
-	float:left;
+	/* float:left; */
 	text-align: center;
 }
 

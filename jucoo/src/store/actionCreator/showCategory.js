@@ -1,5 +1,4 @@
 import axios from "axios";
-
 export default {
     GetCategory(payload) {
         return {
@@ -7,9 +6,12 @@ export default {
             payload
         }
     },
-    getCategoryList() {
+    getCategoryList({
+        page : page = 1,
+        category: category = 0/1
+     }) {
         return ((dispatch) => {
-            axios.get("https://m.juooo.com/Search/getShowCategory?version=6.0.1&referer=2&timestamp=1563265046")
+            axios.get("/juco/Search/getShowCategory?version=6.0.1&referer=2&timestamp=1563265046")
                 .then(({
                     data
                 }) => {
@@ -17,9 +19,13 @@ export default {
                     const showCategoryList = data.data.show_category_list;
                     //console.log(4444444444,showCategoryList)
                     dispatch(this.GetCategory({
-                        showCategoryList
+                        showCategoryList,
+                        page,
+                        category
                     }))
                 })
         })
-    }
+    },
+
+
 }
