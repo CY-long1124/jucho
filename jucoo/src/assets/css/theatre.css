@@ -17,7 +17,7 @@
 }
 .theatre_logo{
 	width:90%;
-	height:310px;
+	height:325px;
 	margin:16px 16px 0 16px;
 	border:1px solid #ccc;
 	/* box-shadow: 2px 2px 10px; */
@@ -88,20 +88,23 @@
 	position: relative;
 	margin:0px 15px;
 	position:relative;
-	overflow-x: scroll;
+	_overflow-x: scroll;
+	overflow: hidden;
 }
 .theatre_bottom{
 	position:relative;
-	width:365%;
+	white-space: nowrap;
 	height:185px;
 	/* background:#999; */
 	position: relative;
-	overflow-x: scroll;
+	_overflow-x: scroll;
+	overflow: auto;
+    padding-bottom: 60px;
 	
 }
 .theatre_z_bottom{
 	height:178px; 
-	overflow: hidden;
+	_overflow: hidden;
 	display: inline-block;
 	/* float:left; */
 	text-align: center;
