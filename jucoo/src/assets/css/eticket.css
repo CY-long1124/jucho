@@ -1,0 +1,24 @@
+.eticket_top{
+	height:45px;
+	padding:0 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+}
+.eticket_top span:nth-of-type(2){
+	font-size: 20px;
+}
+.eticket_main{
+	text-align: center;
+}	
+.eticket_main img{
+	width:109px;
+	height:77.5px;
+	margin-top:120px;
+}
+.eticket_main p{
+	font-size: 14px;
+	margin-top: 20px;
+	color:#999
+}

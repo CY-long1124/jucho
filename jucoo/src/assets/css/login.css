@@ -12,6 +12,10 @@ h2{
 	height:43px;
 	padding:0 18px;
 	box-sizing: border-box;
+	vertical-align: middle;
+}
+.goout h2{
+	line-height: 43px;
 }
 .main{
 	padding:0 40px;
@@ -39,7 +43,8 @@ h2{
 .lg_input{
 	border:none;
 	width:200px;
-	height:24px;	
+	height:24px;
+	outline: none;
 }
 .tip{
 	color:#232323;
@@ -83,4 +88,19 @@ h2{
 	left:37%;
 	background: #fff;
 	color:#999
+}
+
+.login_foot_main{
+	line-height:65px;
+	display: flex;
+	justify-content: space-around;
+}
+.login_foot_main span{
+	font-size: 30px;
+}
+.login_foot_main span:nth-of-type(1){
+	color:red
+}
+.login_foot_main span:nth-of-type(2){
+	color:green
 }
