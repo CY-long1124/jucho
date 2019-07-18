@@ -12,7 +12,7 @@ class Myjuooo extends React.Component{
 						<div className="myjuooo_main_t">
 							<img src="https://image.juooo.com/group1/M00/03/6F/rAoKNV0XF2uABEtSAAANUrP00o0602.png"/>
 							<span>橙子</span>
-							<span>id:123456</span>
+							<span>id:{localStorage.userName}</span>
 						</div>
 						<div className="myjuooo_main_m">
 							<p>普通会员</p>

@@ -11,7 +11,7 @@ class HomeHead extends React.Component{
         return (
             <div className="homeHead">
                 <div className="pic-icon">
-                    <i className="iconfont">&#xe611;</i>
+                    <i className="iconfont" id="iname">&#xe611;</i>
                     <span>全国</span>
                 </div>
                 <div className="search" onClick={()=>{

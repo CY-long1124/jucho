@@ -25,38 +25,41 @@ import Search from './views/search'
 import TheatreStyleCenter from './views/theatreStyleCenter'
 
 
-function App() {
-  return (
-    <div className="App">
-      <Router>
-        <NavLink to={"/" }></NavLink>
-        <NavLink to={"/theatre" }></NavLink>
-        <NavLink to={"/eticket" }></NavLink>
-        <NavLink to={"/myjuooo" }></NavLink>
-        <NavLink to={"/showsLibrary" }></NavLink>
-        <NavLink to={"/tourshowinfo" }></NavLink>
-        <NavLink to={"/login" }></NavLink>
-        <NavLink to={"/register" }></NavLink>
-				<NavLink to={"/theatreStyleCenter"}></NavLink>
-	
-	
 
-				{
-					router.map((v,i)=>{
-						return(
-						<div>
-							<Route key={i} path={v.path} component={v.component} exact={v.exact}></Route>
-							
-						</div>
-							
-						)
-					})
-				}
-
-        <BottomNav></BottomNav>	
-      </Router>
-    </div>
-  );
+class App extends React.Component{
+		render(){
+			return (
+					  <div className="App">
+					  <Router>
+					    <NavLink to={"/" }></NavLink>
+					    <NavLink to={"/theatre" }></NavLink>
+					    <NavLink to={"/eticket" }></NavLink>
+					    <NavLink to={"/myjuooo" }></NavLink>
+					    <NavLink to={"/showsLibrary" }></NavLink>
+					    <NavLink to={"/tourshowinfo" }></NavLink>
+					    <NavLink to={"/login" }></NavLink>
+					    <NavLink to={"/register" }></NavLink>
+							<NavLink to={"/theatreStyleCenter"}></NavLink>
+						
+						
+					
+							{
+								router.map((v,i)=>{
+									return(
+									<div key={i}>
+										<Route path={v.path} component={v.component} exact={v.exact}></Route>
+									
+									</div>
+									)
+								})
+							}
+						<BottomNav></BottomNav>
+					    
+					  </Router>
+					</div>
+			)
+		}
 }
+
 
 export default connect()(App);

@@ -10,12 +10,20 @@ module.exports = function (app) {
 
     app.use(proxy("/juco",{
         target:"https://m.juooo.com",
-        //target:"http://127.0.0.1",
+        // target:"http://127.0.0.1",
         changeOrigin:true,
         pathRewrite:{
             "^/juco":""
         }
-    }))
+    }));
+	
+	app.use(proxy("/login",{
+		target:"http://127.0.0.1",
+		changeOrigin:true,
+		pathRewrite:{
+			"^/login":""
+		}
+	}))
 };
 
 

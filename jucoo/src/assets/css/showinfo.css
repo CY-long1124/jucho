@@ -24,6 +24,12 @@
     vertical-align: middle;
     width: 100%;
 }
+.intro__content img{
+    border: none;
+    border-color: transparent;
+    vertical-align: middle;
+    width: 100%;
+}
 .brief__primary__fg{
     position: relative;
     height: 253px;
