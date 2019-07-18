@@ -37,17 +37,22 @@ class CategoryBlock extends React.Component{
                                         </div>
                                     </div>
                                 </div>
-                                <div>
+                                <ul className="row-bg-r-box">
                                     {
                                         v.a.map((v,i)=>{
                                             return (
-                                                <div>
-                                                    sdsdsd
-                                                </div>
+                                                <li className="row-bg-r-img" key={i}>
+                                                
+                                                    <div>
+                                                        <img src="https://image.juooo.com//group1/M00/03/1C/rAoKNVzAQJmAZOaRAABAcGMcZbw680.jpg"/>
+                                                    </div>
+                                                    <p>万有引力</p>
+                                                    <p>$150<span>起</span></p>
+                                                </li>
                                             )
                                         })
                                     }
-                                </div>
+                                </ul>
                             </div>
                         )
                     })
