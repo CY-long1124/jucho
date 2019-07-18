@@ -50,6 +50,7 @@ class Show extends React.Component{
 }
 componentWillMount(){
   this.props.getLibraryList({}); 
+  console.log(this.props)
 }
 }
 

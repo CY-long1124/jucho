@@ -37,17 +37,7 @@ class CategoryBlock extends React.Component{
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    {
-                                        v.a.map((v,i)=>{
-                                            return (
-                                                <div>
-                                                    sdsdsd
-                                                </div>
-                                            )
-                                        })
-                                    }
-                                </div>
+                                
                             </div>
                         )
                     })
