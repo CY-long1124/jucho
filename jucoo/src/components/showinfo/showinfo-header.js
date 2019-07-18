@@ -67,7 +67,7 @@ class ShowinfoHeader extends React.Component{
     }
 }
 function mapStateToProps(state) {
-        console.log(state.showinfoReducer.showinfoState,"yyy");
+        // console.log(state.showinfoReducer.showinfoState,"yyy");
         return{
             showinfoState:state.showinfoReducer.showinfoState
         }

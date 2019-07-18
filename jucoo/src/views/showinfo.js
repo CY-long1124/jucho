@@ -17,7 +17,7 @@ class Showinfo extends React.Component{
     }
     render(){
         if(this.props.showinfoState.static_data){
-            console.log(this.props.showinfoState.static_data,"000");
+            // console.log(this.props.showinfoState.static_data,"000");
             return (
                 <div className="detail">
                     {/*头部信息*/}
