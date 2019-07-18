@@ -4,5 +4,8 @@ export default function(state=ClassfyState,{type,payload}){
     if(type === "GET_CLASSFYLIST"){
         state.classfyList = payload.classfyList
     }
+    if(type === "CHANGE_CATEGORY_DATA"){
+        state.categoryData = payload.data
+    }
     return state;
 }
