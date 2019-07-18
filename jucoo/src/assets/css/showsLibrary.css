@@ -36,6 +36,11 @@ a {
     position: relative;;
     overflow-x:scroll;
     overflow-x:visible;
+    padding-bottom: 20px;
+}
+#ShowCate div{
+    height: 30px;
+    overflow: hidden;
 }
 #ShowCate ul li {
     pointer-events: auto;

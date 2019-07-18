@@ -44,8 +44,8 @@ function App() {
 				{
 					router.map((v,i)=>{
 						return(
-						<div>
-							<Route key={i} path={v.path} component={v.component} exact={v.exact}></Route>
+						<div key={i}>
+							<Route  path={v.path} component={v.component} exact={v.exact}></Route>
 							
 						</div>
 							
