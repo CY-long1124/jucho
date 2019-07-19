@@ -17,7 +17,7 @@ class Showinfo extends React.Component{
     }
     render(){
         if(this.props.showinfoState.static_data){
-            // console.log(this.props.showinfoState.static_data,"000");
+            console.log(this.props.showinfoState,"000");
             return (
                 <div className="detail">
                     {/*头部信息*/}
@@ -46,12 +46,12 @@ class Showinfo extends React.Component{
     }
     componentWillMount(){
         // console.log(this.props,"showinfo");
-
-        this.props.getShowInfo();
+        // console.log(this.props.match.params.showId,"uuuuuu");
+        this.props.getShowInfo(this.props.match.params.showId);
     }
 }
 function mapStateToProps(state) {
-    // console.log(state.showinfoReducer.showinfoState,"yyy");
+    console.log(state.showinfoReducer.showinfoState,"yyy");
     return{
         showinfoState:state.showinfoReducer.showinfoState
     }

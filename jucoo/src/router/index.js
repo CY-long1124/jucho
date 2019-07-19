@@ -52,7 +52,7 @@ export default[
 		isShow:false
 	},
 	{
-		path:"/showinfo",
+		path:"/showinfo/:showId",
 		component:Showinfo,
 		isShow:false
 	},
