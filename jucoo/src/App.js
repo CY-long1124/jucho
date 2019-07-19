@@ -53,7 +53,7 @@ class App extends React.Component{
 									)
 								})
 							}
-						<BottomNav></BottomNav>
+						{/* <BottomNav></BottomNav> */}
 					    
 					  </Router>
 					</div>
