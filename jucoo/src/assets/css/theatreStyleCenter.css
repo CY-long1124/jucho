@@ -1,9 +1,18 @@
 .theatreStyleCenter{
     width:100%;
     height:50px;
+	text-align: center;
     /* background:#999; */
-	
 }
+
+.theatreStyleCenter_logo{
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+}
+	
 .theatreStyleCenter_logo h2{
 	display: inline-block;
     font-size: 20px;
@@ -14,13 +23,17 @@
 .theatreStyleCenter span{
 	font-size: 20px;
 	line-height: 50px;
-	float: left;
-	margin:0 80px;
+
+	/* margin:0 50px; */
+	
+}
+.theatreStyleCenter .theatreStyleCenter_logo span{
+	text-align: center;
 }
 
 .theatreStyleCenter h3{
-	float: left;
-	line-height: 50px;
+	float: right;
+	margin:15px 20px;
 }
 
 .theatreStyle_img img{
