@@ -51,6 +51,7 @@ export default[
 	{
 		path:"/tourshowinfo",
 		component:Tourshowinfo,
+
 		isShow:false
 	},
 	{

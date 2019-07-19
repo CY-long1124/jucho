@@ -8,32 +8,34 @@ import { stat } from 'fs';
 class TourBlock extends React.Component{
     render(){
         return (
-            <div className="hot-block">
-                <div className="hot-block-t">
+            <div className="tour-block">
+                <div className="tour-block-t">
                     <h3>巡回演出</h3>
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAALVBMVEUAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmaTgChpAAAAD3RSTlMA/Aa1qrzcwa+ezcijk5JAYXVXAAAAVUlEQVQoz2MYtoDNAIsghzA2pYEOWASZRbApNWzAIqiKTSlT4QEsouqS2JQGXsAiqpVApCDTxgeYgtoy2OyZQJyLmAqxhAirBLbwcCAy5NgaGIYzAADnxQppL/x7ngAAAABJRU5ErkJggg==" alt=""/>
                 </div>
-                <ul>
+                <ul className="row-bg-t-box">
                     {
-                        // [1,2,3,4,5,6].map((v,i)=>{
-                        //     return (
-                        //         <li>
-                                   
-                        //         </li>
-                        //     )
-                        // })
+                       this.props.hotTourList.map((v,i)=>{
+                        return (
+                            <li className="row-bg-t-img" key={i}>
+                                <div>
+                                    <img src={v.pic}/>
+                                </div>
+                                <p className="ovv">{v.show_name}</p>
+                            </li>
+                        )
+                    })
                     }
                 </ul>
             </div>
         )
     }
     componentWillMount(){
-        // this.props.getTourList();
+         this.props.getTourList();
         // console.log(this.props.hotTourList)
     }
 }
 const mapStateToProps = (state) => {
-    // console.log(state);
     return {
         hotTourList : state.hot.hotTourList
     }

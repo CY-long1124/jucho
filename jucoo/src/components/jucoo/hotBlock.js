@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/css/hotBlock.css'
+import '../../assets/css/tourBlock.css'
 import '../../assets/css/categoryBlock.css'
 import {
     connect

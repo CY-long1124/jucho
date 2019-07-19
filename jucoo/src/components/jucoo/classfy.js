@@ -14,7 +14,10 @@ class Classfy extends React.Component{
                 {
                     this.props.classfyList.map((v,i)=>{
                         return (
-                            <div key={i}>
+                            <div key={i} onClick={()=>{
+                                this.props.history.push("/showsLibrary/1/2")
+                            }
+                            }>
                                 <img src={v.pic} alt=""/>
                                 <span>{v.name}</span>
                             </div>
