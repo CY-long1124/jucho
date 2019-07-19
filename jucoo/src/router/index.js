@@ -8,6 +8,8 @@ import Login from '../views/login'
 // import Register from '../views/register'
 import Showinfo from '../views/showinfo'
 import Search from '../views/search'
+import TheatreStyleCenter from '../views/theatreStyleCenter'
+
 
 export default[
 	{
@@ -55,6 +57,10 @@ export default[
 		path:"/showinfo",
 		component:Showinfo,
 		isShow:false
+	},
+	{
+		path:"/theatreStyleCenter",
+		component:TheatreStyleCenter,
+		isShow:false
 	}
-	
 ]

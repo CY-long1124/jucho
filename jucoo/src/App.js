@@ -42,27 +42,13 @@ function App() {
 				
 
 
-				
-
-        <Route path="/" exact component={Jucheng}></Route>
-        <Route path="/theatre" component={Theatre}></Route>
-        <Route path="/eticket" component={Eticket}></Route>
-        <Route path="/myjuooo" component={Myjuooo}></Route>
-        <Route path="/login" component={Login}></Route>
-        <Route path="/search" component={Search}></Route>
-
-        <Route path="/register" component={Register}></Route>
-        <Route path="/showsLibrary" component={ShowsLibrary}></Route>
-        <Route path="/tourshowinfo" component={Tourshowinfo}></Route>
-        <Route path="/showinfo" component={Showinfo}></Route>
-				<Route path="/theatreStyleCenter" component={TheatreStyleCenter}></Route>
 					
 
 				{
 					router.map((v,i)=>{
 						return(
-						<div>
-							<Route key={i} path={v.path} component={v.component} exact={v.exact}></Route>
+						<div key={i}>
+							<Route  path={v.path} component={v.component} exact={v.exact}></Route>
 							
 						</div>
 							
