@@ -11,7 +11,8 @@ import {
 } from 'react-router-dom'
 
 import router from "./router"
-import BottomNav from './components/bottomNav'
+import BottomNav from './components/bottomNav';
+import HotBlock from "./components/jucoo/hotBlock";
 import Jucheng from './views/jucheng'
 import Theatre from './views/theatre'
 import Eticket from './views/eticket'
@@ -37,9 +38,7 @@ class App extends React.Component{
 					    <NavLink to={"/login" }></NavLink>
 					    <NavLink to={"/register" }></NavLink>
 							<NavLink to={"/theatreStyleCenter"}></NavLink>
-						
-						
-					
+
 							{
 								router.map((v,i)=>{
 									return(
