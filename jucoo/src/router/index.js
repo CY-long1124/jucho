@@ -42,7 +42,7 @@ export default[
 		isShow:false
 	},
 	{
-		path:"/showsLibrary",
+		path:"/showsLibrary/:cid/:caid",
 		component:ShowsLibrary,
 		isShow:false
 	},

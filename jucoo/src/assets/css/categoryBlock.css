@@ -67,6 +67,15 @@
     padding-bottom: 70px;
     padding-left:0;
 }
+.row-bg-q-box{
+    width: 100%;
+    white-space: nowrap;
+    height:180px;
+    overflow: auto;
+    display: flex;
+    padding-bottom: 100px;
+    padding-left:0;
+}
 .row-bg-r-img{
     _width: 2.85333rem;
     _height: 3.89333rem;
