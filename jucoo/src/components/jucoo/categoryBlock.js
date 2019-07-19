@@ -37,7 +37,7 @@ class CategoryBlock extends React.Component{
                                         </div>
                                     </div>
                                 </div>
-                               { <ul className="row-bg-r-box">
+                                <ul className="row-bg-r-box">
                                     {
                                         v.list.slice(1,v.list.length).map((v,i)=>{
                                             return (
@@ -51,7 +51,7 @@ class CategoryBlock extends React.Component{
                                             )
                                         })
                                     }
-                                </ul>}
+                                </ul>
                             </div>
                         )
                     })

@@ -2,7 +2,7 @@ import {
     combineReducers
 } from 'redux'
 
-
+import hot from './hot'
 import jucoo from './jucoo';
 import theatre from './theatre'
 import showCategory  from "./showCategory";
@@ -16,4 +16,5 @@ export default combineReducers({
     showCategory,
     showsLibrary,
     classfy,
+    hot,
 })

@@ -23,9 +23,6 @@ import Register from './views/register'
 import Showinfo from './views/showinfo'
 import Search from './views/search'
 import TheatreStyleCenter from './views/theatreStyleCenter'
-
-
-
 class App extends React.Component{
 		render(){
 			return (
