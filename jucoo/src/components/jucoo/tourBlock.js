@@ -36,7 +36,6 @@ class TourBlock extends React.Component{
     }
 }
 const mapStateToProps = (state) => {
-   // console.log(909090,state);
     return {
         hotTourList : state.hot.hotTourList
     }

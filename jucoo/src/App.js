@@ -37,8 +37,10 @@ class App extends React.Component{
 					    <NavLink to={"/tourshowinfo" }></NavLink>
 					    <NavLink to={"/login" }></NavLink>
 					    <NavLink to={"/register" }></NavLink>
-							<NavLink to={"/theatreStyleCenter"}></NavLink>
-
+						  <NavLink to={"/theatreStyleCenter"}></NavLink>
+						
+						
+					
 							{
 								router.map((v,i)=>{
 									return(
@@ -50,6 +52,7 @@ class App extends React.Component{
 								})
 							}
 						<BottomNav></BottomNav>
+
 					    
 					  </Router>
 					</div>

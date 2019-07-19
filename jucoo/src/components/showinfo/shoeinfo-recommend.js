@@ -6,11 +6,12 @@ import {
 import {
     bindActionCreators
 } from "redux"
+import {withRouter} from "react-router-dom";
 import showinfoCreator from "../../store/actionCreator/showinfoCreator"
 class ShowinfoRecomend extends React.Component{
     render(){
         if(this.props.showinfoList.length!==0){
-            console.log(this.props.showinfoList.list,"rrr");
+            // console.log(this.props.showinfoList.list,"rrr666");
             // const showList = this.props.showinfoList.list.splice(1,3);
             // console.log(showList);
             return(
@@ -21,7 +22,7 @@ class ShowinfoRecomend extends React.Component{
                         {
                             this.props.showinfoList.list.slice(1,4).map((v,i)=>{
                                 return(
-                                    <div className="item">
+                                    <div className="item" key={i}>
                                         <div className="item__cover">
                                             <img className="cover__img img" src={v.pic} alt=""/>
                                         </div>
@@ -49,7 +50,11 @@ class ShowinfoRecomend extends React.Component{
                         }
 
                     </div>
-                    <div className="recommend__more" >查看更多演出</div>
+                    {/*https://m.juooo.com/Search/getShowList?category=36&city_id=10055&page=1*/}
+                    <div className="recommend__more" onClick={()=>{
+                        // console.log(this.props.showinfoState.static_data.cate_parent_id,this.props.showinfoState.static_data.city.city_id,"showinfo");
+                        this.props.history.push(`/showsLibrary/${this.props.showinfoState.static_data.city.city_id}/${this.props.showinfoState.static_data.cate_parent_id}`)
+                    }} >查看更多演出</div>
                 </div>
             )
         }else {
@@ -58,15 +63,17 @@ class ShowinfoRecomend extends React.Component{
 
     }
     componentDidMount(){
-        // console.log(this.props,"showinfo");
-
-        this.props.getShowinfoList();
+        // console.log(this.props.showinfoState.static_data.cate_parent_id,this.props.showinfoState.static_data.city.city_id,"showinfo");
+        let category = this.props.showinfoState.static_data.cate_parent_id;
+        let showListId = this.props.showinfoState.static_data.city.city_id;
+        this.props.getShowinfoList(category,showListId);
         // this.props.getShowInfo();
     }
 }
 function mapStateToProps(state) {
     return{
-        showinfoList:state.showinfoReducer.showinfoList
+        showinfoList:state.showinfoReducer.showinfoList,
+        showinfoState:state.showinfoReducer.showinfoState
     }
 }
-export default connect(mapStateToProps,dispatch=>bindActionCreators(showinfoCreator,dispatch))(ShowinfoRecomend) ;
+export default connect(mapStateToProps,dispatch=>bindActionCreators(showinfoCreator,dispatch))(withRouter(ShowinfoRecomend)) ;

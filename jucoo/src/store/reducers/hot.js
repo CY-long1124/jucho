@@ -7,5 +7,11 @@ export default function(state=hotState,{type,payload}){
     if(type === "GET_TOUR_LIST"){
         state.hotTourList = payload.hotTourList
     }
+    if(type === "GET_HOT_THEATRE_LIST"){
+        state.hotTheatreList = payload.hotTheatreList
+    }
+    if(type === "GET_LOADING_LIST"){
+        state.LoadingList = payload.LoadingList
+    }
     return state;
 }
