@@ -1,0 +1,19 @@
+.home-swiper-slide{
+    height: 196px;
+    position: relative;
+    width: 100%;
+}
+.home-swiper-slide a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.home-swiper-slide a:visited{
+    text-decoration: none;
+    outline: none;
+}
+.home-swiper-slide a img{
+    border: none;
+    border-color: transparent;
+    vertical-align: middle;
+}

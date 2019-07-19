@@ -74,9 +74,9 @@ class ShowinfoTour extends React.Component{
 
     }
     componentWillMount(){
-        // console.log(this.props,"showinfo");
+        // console.log(this.props.showinfoState.static_data.show_id,"showinfo");
 
-        this.props.getShowInfoTourCity();
+        this.props.getShowInfoTourCity(this.props.showinfoState.static_data.show_id);
         // this.props.getShowInfo();
     }
 }

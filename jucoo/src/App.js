@@ -36,7 +36,7 @@ class App extends React.Component{
 					    <NavLink to={"/tourshowinfo" }></NavLink>
 					    <NavLink to={"/login" }></NavLink>
 					    <NavLink to={"/register" }></NavLink>
-							<NavLink to={"/theatreStyleCenter"}></NavLink>
+						  <NavLink to={"/theatreStyleCenter"}></NavLink>
 						
 						
 					
@@ -50,7 +50,8 @@ class App extends React.Component{
 									)
 								})
 							}
-						{/* <BottomNav></BottomNav> */}
+						<BottomNav></BottomNav>
+
 					    
 					  </Router>
 					</div>
