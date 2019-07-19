@@ -25,6 +25,14 @@ export default {
             }
         }
     },
+    updateHomeSwiderList(data){
+        return{
+            type:showinfoType.GET_HOMESWIDERLIST,
+            payload:{
+                data
+            }
+        }
+    },
     getShowInfo(showId = 103174){
         return (dispatch)=>{
             axios.get("/jucoo/Schedule/Schedule/getScheduleInfo?schedular_id="+showId).then(({data})=>{
@@ -56,6 +64,14 @@ export default {
                 // localStorage.clear();
                 // localStorage.data = data.data;
                 this.updateShowInfoList(showList)
+            })
+        }
+    },
+    getHomeSwiderList(){
+        return (dispatch)=>{
+            axios.get("/jucoo/home/index/getClassifyHome?city_id=0").then(({data})=>{
+               // console.log(data.data.slide_list,"121212");
+                this.updateHomeSwiderList(data.data.slide_list)
             })
         }
     }

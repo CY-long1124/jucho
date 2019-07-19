@@ -11,6 +11,7 @@ import ShowinfoHeader from "../components/showinfo/showinfo-header"
 import ShowinfoMain from "../components/showinfo/showinfo-main"
 import ShowinfoTour from "../components/showinfo/showinfo-tour"
 import ShowinfoRecommend from "../components/showinfo/shoeinfo-recommend"
+// import HomeSwiper from "../components/swiper/HomeSwiper"
 class Showinfo extends React.Component{
     constructor(){
         super();
@@ -20,6 +21,8 @@ class Showinfo extends React.Component{
             console.log(this.props.showinfoState,"000");
             return (
                 <div className="detail">
+                    {/*测试*/}
+                    {/*<HomeSwiper/>*/}
                     {/*头部信息*/}
                     <ShowinfoHeader/>
                     {/*描述区*/}
@@ -48,6 +51,7 @@ class Showinfo extends React.Component{
         // console.log(this.props,"showinfo");
         // console.log(this.props.match.params.showId,"uuuuuu");
         this.props.getShowInfo(this.props.match.params.showId);
+
     }
 }
 function mapStateToProps(state) {

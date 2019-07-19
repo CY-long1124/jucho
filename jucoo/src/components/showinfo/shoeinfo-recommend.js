@@ -22,7 +22,7 @@ class ShowinfoRecomend extends React.Component{
                         {
                             this.props.showinfoList.list.slice(1,4).map((v,i)=>{
                                 return(
-                                    <div className="item">
+                                    <div className="item" key={i}>
                                         <div className="item__cover">
                                             <img className="cover__img img" src={v.pic} alt=""/>
                                         </div>
@@ -53,7 +53,7 @@ class ShowinfoRecomend extends React.Component{
                     {/*https://m.juooo.com/Search/getShowList?category=36&city_id=10055&page=1*/}
                     <div className="recommend__more" onClick={()=>{
                         // console.log(this.props.showinfoState.static_data.cate_parent_id,this.props.showinfoState.static_data.city.city_id,"showinfo");
-                        this.props.history.push(`/showsLibrary/${this.props.showinfoState.static_data.cate_parent_id}/${this.props.showinfoState.static_data.city.city_id}`)
+                        this.props.history.push(`/showsLibrary/${this.props.showinfoState.static_data.city.city_id}/${this.props.showinfoState.static_data.cate_parent_id}`)
                     }} >查看更多演出</div>
                 </div>
             )
