@@ -5,7 +5,7 @@ import Myjuooo from '../views/myjuooo'
 import ShowsLibrary from '../views/showsLibrary'
 import Tourshowinfo from '../views/tourshowinfo'
 import Login from '../views/login'
-// import Register from '../views/register'
+import Register from '../views/register'
 import Showinfo from '../views/showinfo'
 import Search from '../views/search'
 import TheatreStyleCenter from '../views/theatreStyleCenter'
@@ -24,7 +24,7 @@ export default[
 		isShow:true
 	},
 	{
-		path:"eticket",
+		path:"/eticket",
 		component:Eticket,
 		isShow:false
 	},
@@ -36,7 +36,7 @@ export default[
 	{
 		path:"/login",
 		component:Login,
-		isShow:true
+		isShow:false
 	},
 	{
 		path:"/search",
@@ -61,6 +61,11 @@ export default[
 	{
 		path:"/theatreStyleCenter",
 		component:TheatreStyleCenter,
+		isShow:false,
+	},
+	{
+		path:"/register",
+		component:Register,
 		isShow:false
 	}
 ]

@@ -28,7 +28,7 @@ class Theatre extends React.Component{
 							<span>{v.count}场在售演出</span>
 						</a>
 						<div id="icon" href="#" className="iconfont ">
-							<span onClick={()=>{this.props.history.push("/TheatreStyleCenter",v.name)}}>&#xe63b;</span>
+							<span onClick={()=>{this.props.history.push("/theatreStyleCenter",v.name)}}>&#xe63b;</span>
 						</div>
 					</div>
 					

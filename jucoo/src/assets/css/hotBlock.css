@@ -1,0 +1,33 @@
+.hot-block{
+    width: 100%;
+    /* background: #4ee4ee; */
+    padding-top:20px;
+    padding-left: 15px;
+    padding-bottom: 35px;
+    
+}
+.hot-block-t{
+    overflow: hidden;
+}
+.hot-block-t h3{
+    margin: 0;
+    font-size: 20px;
+    float: left;
+}
+.hot-block-t img{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 250px;
+}
+.hot-block-b {
+    margin-top: 20px;
+    background: red;
+    height: 180px;
+}
+.tour-block-b {
+    margin-top: 20px;
+    background: yellow;
+    height: 200px;
+}

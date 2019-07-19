@@ -64,3 +64,72 @@
 .adver img{
     width: 100%;
 }
+.ad-box {
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.advise-box {
+    width: 99%;
+    background-color: #f5f5f5;
+}
+.advise-box>.advise {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -40px;
+    
+}
+.advise-box .advise li{
+    background: #fefefe;
+    width: 49%;
+}
+.advise-box .advise li a{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 17px;
+    box-sizing: border-box;
+}
+
+.advise-box .advise li a>div:nth-child(2){
+    margin-top:20px;
+}
+.advise-box .advise li a div h3{
+    font-size: 16px;
+}
+.advise-box .advise li a div p{
+    font-size: 12px;
+    width: 90px;
+}
+.advise-box .advise li a div img{
+    height: 45px;
+    width: 44px;
+}
+.red{
+    color: red;
+}
+.advise-box .advise-b{
+    margin-top :10px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -40px; 
+}
+.advise-box .advise-b li{
+    background: #fefefe;
+    text-align: center;
+    width: 32%;
+}
+.advise-box .advise-b li a div h3{
+    font-size: 16px;
+}
+.advise-box .advise-b li a div p{
+    font-size: 12px;
+}
+.advise-box .advise-b li a div img{
+    height: 45px;
+    width: 44px;
+}
+#iname{
+    font-size: 16px;
+    color: #fefefe;
+}

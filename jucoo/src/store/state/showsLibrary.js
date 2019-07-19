@@ -1,4 +1,8 @@
 const showsList = [];
+const page={};
+const category={};
 export default {
-    showsList
+    showsList,
+    page,
+    category
 }

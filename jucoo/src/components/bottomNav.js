@@ -3,6 +3,7 @@ import {
     withRouter
 } from 'react-router-dom'
 import '../assets/css/BottomNav.css'
+import routerMess from '../router'
 class BottomNav extends React.Component{
     constructor(){
         super();
@@ -21,7 +22,7 @@ class BottomNav extends React.Component{
                 {
                     name:"票夹",
                     pic:"https://image.juooo.com//group1/M00/02/71/rAoKNVwRraqAMv3SAAAIdQJTBKA919.png",
-                    url:"/login"
+                    url:"/eticket"
                 },
                 {
                     name:"我的",
@@ -30,11 +31,12 @@ class BottomNav extends React.Component{
                 }
             ],
             index:0,
+			aaa:true
         }
     }
     render(){
         return (
-            <div className="bootomNav">
+            <div className="bootomNav" style={{display:this.state.aaa?"block":"none"}}>
                 <ol className="bott">
                     
                     {
@@ -42,6 +44,9 @@ class BottomNav extends React.Component{
                             return (
                                 <li key={i}  onClick={()=>{
                                     this.props.history.push(v.url);
+									if(!localStorage.userName&&v.url==="/eticket"){
+										this.props.history.push("/register")
+									}
                                     this.setState({
                                         index : i
                                     })
@@ -59,8 +64,34 @@ class BottomNav extends React.Component{
             </div>
         )
     }
+	componentWillReceiveProps(){
+		 let a=routerMess.find((v)=>{return this.props.history.location.pathname===v.path})
+		// console.log(666,a.isShow)
+		if(!a.isShow){
+			this.setState({
+				aaa:false
+			})
+		}else{
+			this.setState({
+				aaa:true
+			})
+		}
+	}
     componentDidMount(){
-        // console.log(this.props)
+       
+			
     }
+	componentWillMount(){
+		// console.log(333,routerMess)
+		console.log(444,this.props.location.pathname)
+		 let a=routerMess.find((v)=>{return this.props.location.pathname===v.path})
+		// console.log(555,a.isShow)
+		if(!a.isShow){
+			this.setState({
+				aaa:false
+			})
+		}
+
+	}
 }
 export default withRouter(BottomNav);

@@ -1,6 +1,10 @@
 import React from 'react';
 import HomeHead from '../components/jucoo/homeHead'
 import Classfy from '../components/jucoo/classfy'
+import HotBlock from '../components/jucoo/hotBlock'
+import TourBlock from '../components/jucoo/tourBlock'
+import CategoryBlock from '../components/jucoo/categoryBlock'
+import AdBox from '../components/jucoo/adBox'
 import '../assets/css/homeHead.css'
 
 class Jucoo extends React.Component{
@@ -16,8 +20,14 @@ class Jucoo extends React.Component{
                 <div className="adver">
                     <img src="https://image.juooo.com//group1/M00/03/7A/rAoKNV0jflaAL5_EAAD3QE0LKFo824.png" alt=""/>
                 </div>
+                <AdBox></AdBox>
+                <HotBlock></HotBlock>
+                <TourBlock></TourBlock>
+                <CategoryBlock></CategoryBlock>
+               
             </div>
         )
     }
+    
 }
 export default Jucoo;

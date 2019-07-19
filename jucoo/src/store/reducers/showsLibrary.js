@@ -2,13 +2,14 @@ import showsLibraryState from '../state/showsLibrary';
 import showsLibraryType from "../actionType/showsLibrary";
 
 export default function(state=showsLibraryState,{type,payload}){
-    // console.log(state)
+     //console.log(5555555555,payload)
     state = JSON.parse(JSON.stringify(state));
     if(type===showsLibraryType.GET_SHOWSLIBRARY){
-//console.log(12344,payload.showCategoryList)
         state.showsList = payload.showsList;
+        state.category = payload.category;
+        state.page = payload.page;
+        //console.log(9999999,state)
     }
-    //console.log(7777777777,state)
     return state;
 }
 
