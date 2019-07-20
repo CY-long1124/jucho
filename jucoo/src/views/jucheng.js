@@ -7,6 +7,7 @@ import CategoryBlock from '../components/jucoo/categoryBlock'
 import AdBox from '../components/jucoo/adBox'
 import Stadiums from '../components/jucoo/stadiums'
 import YanLoading from '../components/jucoo/yanLoading'
+import HomeSwiper from '../components/swiper/HomeSwiper'
 import '../assets/css/homeHead.css'
 
 class Jucoo extends React.Component{
@@ -16,8 +17,13 @@ class Jucoo extends React.Component{
     render(){
         return (
             <div className="father">
-                <HomeHead></HomeHead>
-                <div style={{width:"100%",height:"196px",background:"purple"}}></div>
+                <div>
+                    <div style={{width:"100%",height:"42px"}}></div>
+                    <HomeHead></HomeHead>
+                </div>
+                <div style={{width:"100%",height:"196px"}}>
+                <HomeSwiper></HomeSwiper>
+                </div>
                 <Classfy></Classfy>
                 <div className="adver">
                     <img src="https://image.juooo.com//group1/M00/03/7A/rAoKNV0jflaAL5_EAAD3QE0LKFo824.png" alt=""/>

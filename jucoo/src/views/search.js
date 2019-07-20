@@ -4,8 +4,8 @@ class Search extends React.Component{
     render(){
         return(
             <div>
-                <section>
-                    <div>
+                <section className="soso">
+                    <div className="sssss">
                         <span className="iconfont">&#xe614;</span>
                         <form>
                             <input type="search" placeholder="搜索热门演出"/>

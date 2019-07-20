@@ -6,7 +6,7 @@ import {
 import {
     bindActionCreators
 } from "redux"
-
+import {withRouter} from "react-router-dom";
 import showinfoCreator from "../../store/actionCreator/showinfoCreator"
 // import showinfo from "../../views/showinfo";
 class ShowinfoHeader extends React.Component{
@@ -20,8 +20,12 @@ class ShowinfoHeader extends React.Component{
                    <div className="brief__primary__fg">
                        <div className="brief__primary__fg__title">
                            <span className="brief__primary__fg__title__text">演出详情</span>
-                           <span className="brief__primary__fg__title__back"> </span>
-                           <span className="brief__primary__fg__title__home"> </span>
+                           <span className="brief__primary__fg__title__back" onClick={()=>{
+                               this.props.history.go(-1)
+                           }} > </span>
+                           <span className="brief__primary__fg__title__home" onClick={()=>{
+                               this.props.history.push("/")
+                           }}> </span>
                            <div className="brief__primary__fg__content">
                                <div className="brief__primary__fg__content__cover">
                                    <img className="img" src={this.props.showinfoState.static_data.pic} alt=""/>
@@ -72,4 +76,4 @@ function mapStateToProps(state) {
             showinfoState:state.showinfoReducer.showinfoState
         }
 }
-export default connect(mapStateToProps,dispatch=>bindActionCreators(showinfoCreator,dispatch))(ShowinfoHeader) ;
+export default connect(mapStateToProps,dispatch=>bindActionCreators(showinfoCreator,dispatch))(withRouter(ShowinfoHeader)) ;
