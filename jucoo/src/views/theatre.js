@@ -21,14 +21,14 @@ class Theatre extends React.Component{
 					this.state.data.map((v,i)=>{
 						return (
 				<div className="theatre_logo" key={i}>
-					<div className = "theatre_logo_Top">
-						<img className="theatre_pic" src= {v.pic} alt=""/>	
-						<a href="">
+					<div className = "theatre_logo_Top" >
+						<img className="theatre_pic" src= {v.pic} alt="" onClick={()=>{this.props.history.push("/theatreStyleCenter/"+v.id)}}/>	
+						<a href="" onClick={()=>{this.props.history.push("/theatreStyleCenter/"+v.id)}}>
 							<h2>{v.name}</h2>
 							<span>{v.count}场在售演出</span>
-						</a>
-						<div id="icon" href="#" className="iconfont ">
-							<span onClick={()=>{this.props.history.push("/theatreStyleCenter",v.name)}}>&#xe63b;</span>
+						</a >
+						<div id="icon" href="#" className="iconfont " onClick={()=>{this.props.history.push("/theatreStyleCenter/"+v.id)}}>
+							<span >&#xe63b;</span>
 						</div>
 					</div>
 					

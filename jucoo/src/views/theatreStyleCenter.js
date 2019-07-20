@@ -65,20 +65,20 @@ class TheatreStyleCenter extends React.Component{
 					<div className="theatar_input">
 						<h6 >查看全部演出&nbsp;&nbsp;></h6>
 					</div>
-
+				
 					
 				</div>
 				
 			</div>
 		)
 	}
-	componentDidMount(props){
-		console.log(9999999999999,this);
+	componentWillMount(props){
+// 		console.log(9999999999999,this);
 		axios.get("https://m.juooo.com/RestTheatre/getTheatreList?page=1&version=6.0.1&referer=2")
 			.then(({data})=>{
 				// console.log(212121,this.props.history)
 				for(var i =0 ;i<data.data.theatre_list.length;i++){
-					if(this.props.history.location.state===data.data.theatre_list[i].name){
+					if(this.props.match.params.id===data.data.theatre_list[i].id){
 							this.setState({
 								conxt:data.data.theatre_list[i]
 							})
@@ -88,15 +88,14 @@ class TheatreStyleCenter extends React.Component{
 					
 				})
 	axios.get("/juco/Search/getShowList?category=36&city_id=0&page=1&keywords=&version=6.0.1&referer=2")
-		.then(({data})=>{console.log(11111,data.data.list)
+		.then(({data})=>{
+			// console.log(11111,data.data.list)
 				this.setState({
 								dataList:data.data.list.slice(0,5)
 			})
 			
 		})
-				
-				
-			}
-		}
+	}
+}
 
 export default TheatreStyleCenter;
