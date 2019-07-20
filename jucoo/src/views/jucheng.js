@@ -5,6 +5,8 @@ import HotBlock from '../components/jucoo/hotBlock'
 import TourBlock from '../components/jucoo/tourBlock'
 import CategoryBlock from '../components/jucoo/categoryBlock'
 import AdBox from '../components/jucoo/adBox'
+import Stadiums from '../components/jucoo/stadiums'
+import YanLoading from '../components/jucoo/yanLoading'
 import '../assets/css/homeHead.css'
 
 class Jucoo extends React.Component{
@@ -24,7 +26,8 @@ class Jucoo extends React.Component{
                 <HotBlock></HotBlock>
                 <TourBlock></TourBlock>
                 <CategoryBlock></CategoryBlock>
-               
+                <Stadiums></Stadiums>
+                <YanLoading></YanLoading>
             </div>
         )
     }

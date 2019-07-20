@@ -1,0 +1,143 @@
+.stadiums{
+    width: 100%;
+    height: 343px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+.sta-title{
+    overflow: hidden;
+    height: 26px;
+}
+.sta-title h3{
+    float: left;
+    margin: 0;
+    font-size: 20px;
+}
+.sta-title img{
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 25px;
+}
+.sta-list{
+    width: 100%;
+    white-space: nowrap;
+    height: 300px;
+    overflow: auto;
+    display: flex;
+    margin-top: 20px;
+    padding-left: 0;
+    padding-bottom: 70px;
+}
+.sta-lis>li:last-child{
+    margin-right: 20px;
+}
+.sta-list-li{
+    /* float: left; */
+    border: 1px solid #ebebeb;
+    position: relative;
+    padding: 20px 17px;
+    width: 227px;
+    height: 255px;
+    /* background: blue; */
+    margin:0 10px;
+}
+.li-Box{
+    width: 227px;
+    overflow: hidden;
+}
+.li-Box-l{
+    float: left;
+}
+.li-Box-l img{
+    width: 50px;
+    height: 50px;
+}
+.li-Box-c{
+    float: left;
+    margin-left:10px;
+}
+.li-Box-c h3{
+    margin: 0;
+    margin-top: 2.5px;
+    height: 22px;
+    font-size: 20px;
+    color: #232323;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+}
+.li-Box-c p{
+    margin-top: 7.5px;
+    font-size: 14px;
+    color: #666;
+    height: 16px;
+    line-height: 16px;
+}
+.li-Box-r{
+    float: right;
+    margin-top: 18px;
+    width: 14px;
+    height: 14px;
+}
+.date-li{
+    width: 100%;
+    height: 2px;
+    margin-top: 40px;
+    background-color: #ebebeb;
+    border-radius: 1px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.date-li p:nth-child(1){
+    width: 50%;
+    position: absolute;
+    bottom: 6px;
+    text-align: center;
+}
+.date-li p>span:first-child{
+    display: block;
+    font-size: 14px;
+    color: #b3b3b3;
+    height: 18px;
+    line-height: 18px;
+}
+.date-li p>span:nth-child(2){
+    display: block;
+    width: 7px;
+    height: 7px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin:9px 53px 0 53px;
+    position: absolute;
+    bottom: -18px;
+}
+.date-li p:nth-child(2){
+    width: 50%;
+    position: absolute;
+    bottom: 6px;
+    text-align: center;
+    left: 50%;
+}
+.sta-pic{
+    margin: 0 auto;  
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+    width: 227px;
+    height: 148px;
+}
+.sta-pic>li>img{
+    width: 107px;
+    height: 146px;
+    border-color: transparent;
+}
+.YanLoading{
+    width: 100%;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}

@@ -11,7 +11,8 @@ import {
 } from 'react-router-dom'
 
 import router from "./router"
-import BottomNav from './components/bottomNav'
+import BottomNav from './components/bottomNav';
+import HotBlock from "./components/jucoo/hotBlock";
 import Jucheng from './views/jucheng'
 import Theatre from './views/theatre'
 import Eticket from './views/eticket'
@@ -23,9 +24,6 @@ import Register from './views/register'
 import Showinfo from './views/showinfo'
 import Search from './views/search'
 import TheatreStyleCenter from './views/theatreStyleCenter'
-
-
-
 class App extends React.Component{
 		render(){
 			return (
@@ -39,7 +37,7 @@ class App extends React.Component{
 					    <NavLink to={"/tourshowinfo" }></NavLink>
 					    <NavLink to={"/login" }></NavLink>
 					    <NavLink to={"/register" }></NavLink>
-							<NavLink to={"/theatreStyleCenter"}></NavLink>
+						  <NavLink to={"/theatreStyleCenter"}></NavLink>
 						
 						
 					
@@ -54,6 +52,7 @@ class App extends React.Component{
 								})
 							}
 						<BottomNav></BottomNav>
+
 					    
 					  </Router>
 					</div>
