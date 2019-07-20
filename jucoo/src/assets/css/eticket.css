@@ -22,3 +22,33 @@
 	margin-top: 20px;
 	color:#999
 }
+.eticketList{
+	height:200px;
+	border-bottom: 1px solid #ccc;
+}
+.eticketList div{
+	margin-top:20px;
+	float:left;
+	
+}
+.eticketList div:nth-of-type(2){
+	width:200px;
+	/* float:right */
+}
+.eticketList div img{
+	height:170px;
+}
+.eticketList div p{
+	font-size:16px;
+	color:#ff6743;
+}
+.eticketList div input{
+	display: block;
+	margin-left: 140px;
+	margin-bottom:40px;
+	width:70px;
+	height:20px;
+	border: none;
+	background: red;
+	border-radius: 20px;
+}
