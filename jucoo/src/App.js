@@ -45,7 +45,6 @@ class App extends React.Component{
 									return(
 									<div key={i}>
 										<Route path={v.path} component={v.component} exact={v.exact}></Route>
-									
 									</div>
 									)
 								})
