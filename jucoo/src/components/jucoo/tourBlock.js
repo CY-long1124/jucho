@@ -17,7 +17,7 @@ class TourBlock extends React.Component{
                     {
                        this.props.hotTourList.map((v,i)=>{
                         return (
-                            <li className="row-bg-t-img" key={i}>
+                            <li className="row-bg-t-img" key={i} >
                                 <div>
                                     <img src={v.pic}/>
                                 </div>

@@ -9,6 +9,7 @@ import showCategory  from "./showCategory";
 import showsLibrary from "./showsLibrary";
 import showinfoReducer from './showinfoReducer'
 import classfy from './classfy'
+import tourShowInfo from "./tourShowInfo"
 export default combineReducers({
     jucoo,
     showinfoReducer,
@@ -17,4 +18,5 @@ export default combineReducers({
     showsLibrary,
     classfy,
     hot,
+    tourShowInfo
 })
