@@ -28,7 +28,9 @@ class Show extends React.Component{
         {
         this.props.showsList.map((v,i)=>{
             return(
-                <li key={i}>
+                <li key={i} onClick={()=>{
+                  this.props.history.push("/showinfo/"+v.schedular_id)
+                }}>
                     <div>
                         <img src={v.pic} />
                     </div>
@@ -50,13 +52,15 @@ class Show extends React.Component{
 }
 componentWillMount(){
  // console.log(11111111,this.props);
-  this.props.getLibraryList({}); 
+  this.props.getLibraryList({
+    page : 1,
+    category : this.props.match.params.caid}); 
  // console.log(this.props);
 }
 }
 
 function mapStateToProps(state){  
-  //console.log("state",state.showsLibrary.showsList);
+  // console.log("state",state.showsLibrary.showsList);
   return{
     showsList:state.showsLibrary.showsList,
     category:state.showsLibrary.category,

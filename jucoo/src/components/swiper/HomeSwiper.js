@@ -59,7 +59,7 @@ class HomeSwiper extends React.Component{
     }
 }
 function mapStateToProps(state) {
-    console.log(state.showinfoReducer.homeSwiderList,"home");
+    // console.log(state.showinfoReducer.homeSwiderList,"home");
     return{
         homeSwiderList:state.showinfoReducer.homeSwiderList
     }

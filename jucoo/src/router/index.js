@@ -60,7 +60,7 @@ export default[
 		isShow:false
 	},
 	{
-		path:"/theatreStyleCenter",
+		path:"/theatreStyleCenter/:id",
 		component:TheatreStyleCenter,
 		isShow:false,
 	},

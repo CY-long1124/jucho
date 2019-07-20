@@ -22,7 +22,9 @@ class ShowinfoRecomend extends React.Component{
                         {
                             this.props.showinfoList.list.slice(1,4).map((v,i)=>{
                                 return(
-                                    <div className="item" key={i}>
+                                    <div className="item" key={i} onClick={()=>{
+                                        this.props.history.push("/showinfo/"+v.schedular_id)
+                                    }}>
                                         <div className="item__cover">
                                             <img className="cover__img img" src={v.pic} alt=""/>
                                         </div>
@@ -62,6 +64,11 @@ class ShowinfoRecomend extends React.Component{
         }
 
     }
+    componentWillReceiveProps(){
+        let category = this.props.showinfoState.static_data.cate_parent_id;
+        let showListId = this.props.showinfoState.static_data.city.city_id;
+        // this.props.getShowinfoList(category,showListId);
+    }
     componentDidMount(){
         // console.log(this.props.showinfoState.static_data.cate_parent_id,this.props.showinfoState.static_data.city.city_id,"showinfo");
         let category = this.props.showinfoState.static_data.cate_parent_id;
@@ -71,6 +78,7 @@ class ShowinfoRecomend extends React.Component{
     }
 }
 function mapStateToProps(state) {
+    console.log(state.showinfoReducer.showinfoList.list)
     return{
         showinfoList:state.showinfoReducer.showinfoList,
         showinfoState:state.showinfoReducer.showinfoState

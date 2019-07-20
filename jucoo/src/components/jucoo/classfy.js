@@ -15,7 +15,7 @@ class Classfy extends React.Component{
                     this.props.classfyList.map((v,i)=>{
                         return (
                             <div key={i} onClick={()=>{
-                                this.props.history.push("/showsLibrary/1/2")
+                                this.props.history.push("/showsLibrary/0/"+v.category_id)
                             }
                             }>
                                 <img src={v.pic} alt=""/>
@@ -42,7 +42,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
         getClassFyList(){
             dispatch((dispatch)=>{
-                axios.get("/juco/home/getClassifyItem?city_id=0&operation_limit=5&version=6.0.1&referer=2&timestamp=1563269989").then(({data})=>{
+                axios.get("/jucoo/home/index/getClassifyHome?city_id=0&abbreviation=&version=6.0.1&referer=2").then(({data})=>{
                     // console.log(data.data.classify_list);
                     dispatch({
                         type:"GET_CLASSFYLIST",
