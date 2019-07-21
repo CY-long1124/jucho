@@ -17,7 +17,7 @@ export default {
                 .then(({
                     data
                 }) => {
-                    //console.log(2222222222,this)
+                    // console.log(2222222222,data)
                     const showsList = data.data.list;
                     //console.log(100101001,data)
                     dispatch(this.GetLibrary({

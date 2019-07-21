@@ -10,6 +10,7 @@ import showsLibraryCreator from "../store/actionCreator/showsLibrary";
 import ShowCate from "./showsCategory";
 import '../assets/css/showsLibrary.css';
 class Show extends React.Component{
+	
   render(){
     return (
       <div id="ShowsLibrary">
@@ -52,11 +53,12 @@ componentWillMount(){
  // console.log(11111111,this.props);
   this.props.getLibraryList({}); 
   console.log(this.props)
+	// console.log(9999999,this)
 }
 }
 
 function mapStateToProps(state){  
-  //console.log("state",state.showsLibrary.showsList);
+  // console.log("111state",state);
   return{
     showsList:state.showsLibrary.showsList,
     category:state.showsLibrary.category,

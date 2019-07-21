@@ -57,6 +57,7 @@ class Theatre extends React.Component{
 }
 				
 		componentDidMount(){
+			
 			axios.get("/juco/RestTheatre/getTheatreList?page=1&version=6.0.1&referer=2&timestamp=1563258164")
 				.then(({data})=>{
 					// console.log(data.data.theatre_list)

@@ -66,8 +66,8 @@ class BottomNav extends React.Component{
     }
 	componentWillReceiveProps(){
 
-		 let a=routerMess.find((v)=>{return this.props.history.location.pathname.split("/")[1] ===v.path.split("/")[1] })
 
+		 let a=routerMess.find((v)=>{return this.props.history.location.pathname.split("/")[1] === v.path.split("/")[1]})
 
 		// console.log(666,a.isShow)
 		if(!a.isShow){

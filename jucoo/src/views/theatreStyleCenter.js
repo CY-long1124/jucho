@@ -63,7 +63,7 @@ class TheatreStyleCenter extends React.Component{
 							}
 								
 					<div className="theatar_input">
-						<h6 >查看全部演出&nbsp;&nbsp;></h6>
+						<h6 onClick={()=>{this.props.history.push("/showsLibrary/0/1")}}>查看全部演出&nbsp;&nbsp;></h6>
 					</div>
 				
 					
