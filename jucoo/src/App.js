@@ -18,10 +18,10 @@ import Theatre from './views/theatre'
 import Eticket from './views/eticket'
 import Myjuooo from './views/myjuooo'
 import ShowsLibrary from './views/showsLibrary'
-import Tourshowinfo from './views/tourShowInfo'
+import Tourshowinfo from './views/tourshowinfo'
 import Login from './views/login'
 import Register from './views/register'
-import Showinfo from './views/showinfo'
+//import Showinfo from './views/showinfo'
 import Search from './views/search'
 import TheatreStyleCenter from './views/theatreStyleCenter'
 class App extends React.Component{
@@ -34,7 +34,7 @@ class App extends React.Component{
 					    <NavLink to={"/eticket" }></NavLink>
 					    <NavLink to={"/myjuooo" }></NavLink>
 					    <NavLink to={"/showsLibrary" }></NavLink>
-					    <NavLink to={"/tourshowinfo" }></NavLink>
+					    {/* <NavLink to={"/tourshowinfo" }></NavLink> */}
 					    <NavLink to={"/login" }></NavLink>
 					    <NavLink to={"/register" }></NavLink>
 						  <NavLink to={"/theatreStyleCenter"}></NavLink>

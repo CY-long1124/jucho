@@ -53,25 +53,19 @@ class Show extends React.Component{
 }
 componentWillMount(){
  // console.log(11111111,this.props);
-<<<<<<< HEAD
   this.props.getLibraryList({}); 
   console.log(this.props)
 	// console.log(9999999,this)
-=======
   this.props.getLibraryList({
     page : 1,
     category : this.props.match.params.caid}); 
  // console.log(this.props);
->>>>>>> 3272a875ae2b376d69d696d3864bda425b98f2db
 }
 }
 
 function mapStateToProps(state){  
-<<<<<<< HEAD
   // console.log("111state",state);
-=======
   // console.log("state",state.showsLibrary.showsList);
->>>>>>> 3272a875ae2b376d69d696d3864bda425b98f2db
   return{
     showsList:state.showsLibrary.showsList,
     category:state.showsLibrary.category,

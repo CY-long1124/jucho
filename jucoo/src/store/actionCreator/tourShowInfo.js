@@ -8,7 +8,7 @@ export default {
         }
     },
     getTourList({
-       sid: sid 
+       sid: sid =36016
     }){
 console.log("执行了",this)
         return ((dispatch) => {

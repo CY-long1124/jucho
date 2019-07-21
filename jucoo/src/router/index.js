@@ -3,7 +3,7 @@ import Theatre from '../views/theatre'
 import Eticket from '../views/eticket'
 import Myjuooo from '../views/myjuooo'
 import ShowsLibrary from '../views/showsLibrary'
-import Tourshowinfo from '../views/tourShowInfo'
+import Tourshowinfo from '../views/tourshowinfo'
 import Login from '../views/login'
 import Register from '../views/register'
 import Showinfo from '../views/showinfo'
@@ -49,12 +49,6 @@ export default[
 		isShow:false
 	},
 	{
-		path:"/tourshowinfo",
-		component:Tourshowinfo,
-
-		isShow:false
-	},
-	{
 		path:"/showinfo/:showId",
 		component:Showinfo,
 		isShow:false
@@ -67,6 +61,12 @@ export default[
 	{
 		path:"/register",
 		component:Register,
+		isShow:false
+	}
+	,
+	{
+		path:"/tourshowinfo",
+		component:Tourshowinfo,
 		isShow:false
 	}
 ]
