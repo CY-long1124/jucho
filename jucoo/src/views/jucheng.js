@@ -9,6 +9,9 @@ import Stadiums from '../components/jucoo/stadiums'
 import YanLoading from '../components/jucoo/yanLoading'
 import HomeSwiper from '../components/swiper/HomeSwiper'
 import '../assets/css/homeHead.css'
+import {
+    withRouter
+} from "react-router-dom"
 
 class Jucoo extends React.Component{
     constructor(){
@@ -39,4 +42,4 @@ class Jucoo extends React.Component{
     }
     
 }
-export default Jucoo;
+export default withRouter(Jucoo);

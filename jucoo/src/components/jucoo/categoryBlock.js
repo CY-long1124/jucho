@@ -3,13 +3,14 @@ import axios from 'axios';
 import {
     connect
 } from 'react-redux'
+import {
+    withRouter
+} from "react-router-dom"
+
 import '../../assets/css/categoryBlock.css'
 class CategoryBlock extends React.Component{
     constructor(){
         super();
-        this.state={
-            list:[{a:[1,2,3,4,5,6]},{a:[1,2,3,4,5,6]},{a:[1,2,3,4,5,6]},{a:[1,2,3,4,5,6]},{a:[1,2,3,4,5,6]},{a:[1,2,3,4,5,6]}],
-        }
     }
     render(){
         return (
@@ -20,9 +21,13 @@ class CategoryBlock extends React.Component{
                             <div key={i} className="cate-block">
                                 <div className="cate-block-title">
                                     <h3 className="cate-block-title-name">{v.title}</h3>
-                                    <img className="cate-block-title-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAALVBMVEUAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmaTgChpAAAAD3RSTlMA/Aa1qrzcwa+ezcijk5JAYXVXAAAAVUlEQVQoz2MYtoDNAIsghzA2pYEOWASZRbApNWzAIqiKTSlT4QEsouqS2JQGXsAiqpVApCDTxgeYgtoy2OyZQJyLmAqxhAirBLbwcCAy5NgaGIYzAADnxQppL/x7ngAAAABJRU5ErkJggg==" alt=""/>
+                                    <img onClick={()=>{
+                                            this.props.history.push("/showsLibrary/0/"+v.cat_id)
+                                        }} className="cate-block-title-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAALVBMVEUAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmaTgChpAAAAD3RSTlMA/Aa1qrzcwa+ezcijk5JAYXVXAAAAVUlEQVQoz2MYtoDNAIsghzA2pYEOWASZRbApNWzAIqiKTSlT4QEsouqS2JQGXsAiqpVApCDTxgeYgtoy2OyZQJyLmAqxhAirBLbwcCAy5NgaGIYzAADnxQppL/x7ngAAAABJRU5ErkJggg==" alt=""/>
                                 </div>
-                                <div className="category-block__list__row">
+                                <div className="category-block__list__row" onClick={()=>{
+                                     this.props.history.push("/showinfo/"+ v.list[0].sche_id)
+                                }}>
                                     <div className="row-bg">
                                         <div className="row-bg-l">
                                             <img src={v.list[0].pic} alt=""/>
@@ -41,7 +46,9 @@ class CategoryBlock extends React.Component{
                                     {
                                         v.list.slice(1,v.list.length).map((v,i)=>{
                                             return (
-                                                <li className="row-bg-r-img" key={i}>
+                                                <li className="row-bg-r-img" key={i} onClick={()=>{
+                                                    this.props.history.push("/showinfo/"+ v.sche_id)
+                                               }}>
                                                     <div>
                                                         <img src={v.pic}/>
                                                     </div>
@@ -61,11 +68,11 @@ class CategoryBlock extends React.Component{
     }
     componentWillMount(){
         this.props.getCategoryData();
-        // console.log(1111111111111,this.props.categoryData);
+        // console.log(1111111111111,this.props);
     }
 }
 const mapStateToProps = (state) => {
-    // console.log(22222222,state)
+    // console.log(22222222,state.classfy.categoryData)
     return {
         categoryData : state.classfy.categoryData
     }
@@ -85,4 +92,4 @@ const mapDispatchToProps = (dispatch) => {
        } 
     }
 }
-export default connect(mapStateToProps,mapDispatchToProps)(CategoryBlock);
+export default connect(mapStateToProps,mapDispatchToProps)(withRouter(CategoryBlock));

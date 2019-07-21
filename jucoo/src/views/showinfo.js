@@ -16,6 +16,9 @@ import ShowinfoRecommend from "../components/showinfo/shoeinfo-recommend"
 class Showinfo extends React.Component{
     constructor(props){
         super(props);
+        this.state = {
+            showId:this.props.match.params.showId
+        }
     }
 	buyEticket(v){
 		// console.log(v,v.pic,v.schedular_id,v.show_name,v.price_range)
@@ -62,8 +65,17 @@ class Showinfo extends React.Component{
     componentWillMount(){
         // console.log(this.props,"showinfo");
         // console.log(this.props.match.params.showId,"uuuuuu");
-        this.props.getShowInfo(this.props.match.params.showId);
+        this.props.getShowInfo(this.state.showId);
 
+    }
+    componentWillReceiveProps(nextProps){
+        // console.log(1111,nextProps.match.params.showId)
+        if(this.props.match.params.showId != nextProps.match.params.showId){
+            this.props.getShowInfo(nextProps.match.params.showId);
+        }
+        // this.setState({
+        //     showId:nextProps.match.params.showId
+        // })
     }
 }
 function mapStateToProps(state) {

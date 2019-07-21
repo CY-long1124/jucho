@@ -5,6 +5,9 @@ import {
     connect
 } from 'react-redux'
 import axios from 'axios'
+import {
+    withRouter
+} from 'react-router-dom'
 class HotBlock extends React.Component{
     render(){
         return (
@@ -17,7 +20,10 @@ class HotBlock extends React.Component{
                     {
                         this.props.hotList.map((v,i)=>{
                             return (
-                                <li className="row-bg-r-img" key={i}>
+                                <li className="row-bg-r-img" key={i} onClick={()=>{
+                                    let url =  v.schedular_url.slice(v.schedular_url.lastIndexOf("/")+1, v.schedular_url.length)
+                                    this.props.history.push("/showinfo/"+url);
+                                }}>
                                     <div>
                                         <img src={v.pic}/>
                                     </div>
@@ -35,7 +41,7 @@ class HotBlock extends React.Component{
     }
 }
 const mapStateToProps = (state) => {
-    // console.log(state);
+    console.log(state.hot.hotList);
     return {
         hotList : state.hot.hotList
     }
@@ -58,4 +64,4 @@ const mapDispatchToProps = (dispatch) => {
         }
     }
 }
-export default connect(mapStateToProps,mapDispatchToProps)(HotBlock);
+export default connect(mapStateToProps,mapDispatchToProps)(withRouter(HotBlock));
