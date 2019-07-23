@@ -41,7 +41,7 @@ class HotBlock extends React.Component{
     }
 }
 const mapStateToProps = (state) => {
-    console.log(state.hot.hotList);
+    // console.log(state.hot.hotList);
     return {
         hotList : state.hot.hotList
     }

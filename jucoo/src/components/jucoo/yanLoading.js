@@ -9,6 +9,12 @@ import {
 } from "react-router-dom"
 import '../../assets/css/showinfo.css'
 class YanLoading extends React.Component{
+    constructor(){
+        super();
+        this.state = {
+            page :1,
+        }
+    }
     render(){
         return (
             <div className="YanLoading">
@@ -57,6 +63,23 @@ class YanLoading extends React.Component{
         this.props.getLoadingList();
         // console.log(this.props.LoadingList)
     }
+    componentDidMount(e){
+        let _this = this;
+        window.onscroll = function(e){
+            // if(parseInt(document.documentElement.scrollTop%5) === 0){
+                console.log(document.documentElement.scrollTop);
+                if(document.documentElement.scrollTop >( 4357+1800*_this.state.page)){
+                    _this.setState({
+                        page : ++ _this.state.page
+                    })
+                    console.log(_this);
+                    _this.props.getLoadingList.bind(_this)(_this.state.page);
+                }
+            // }
+            
+        }
+    }
+
 }
 const mapStateToProps = (state) => {
     // console.log(111111,state.hot.LoadingList);
@@ -65,12 +88,16 @@ const mapStateToProps = (state) => {
     }
 }
 const mapDispatchToProps = (dispatch) => {
+    let LoadingList = []
     return {
-        getLoadingList(){
+        getLoadingList(page=1){
             dispatch((dispatch)=>{
-                axios.get("/jucoo/home/index/getRecommendShow?cityAdd=&page=1&version=6.0.1&referer=2").then(({data})=>{
+                axios.get("/jucoo/home/index/getRecommendShow?cityAdd=&page="+page+"&version=6.0.1&referer=2").then(({data})=>{
                     // console.log(data.data.recommend_show_list);
-                    const LoadingList = data.data.recommend_show_list;
+                   
+                     LoadingList = [...data.data.recommend_show_list,
+                                    ...LoadingList                    
+                    ];
                     dispatch({
                         type:"GET_LOADING_LIST",
                         payload:{

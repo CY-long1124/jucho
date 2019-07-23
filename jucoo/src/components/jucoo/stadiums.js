@@ -3,6 +3,9 @@ import axios from 'axios';
 import {
     connect
 } from 'react-redux'
+import {
+    withRouter
+} from 'react-router-dom'
 import "../../assets/css/stadiums.css"
 class Stadiums extends React.Component{
     render(){
@@ -10,13 +13,17 @@ class Stadiums extends React.Component{
             <div className="stadiums">
                 <div className="sta-title">
                     <h3>热门场馆</h3>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAALVBMVEUAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmaTgChpAAAAD3RSTlMA/Aa1qrzcwa+ezcijk5JAYXVXAAAAVUlEQVQoz2MYtoDNAIsghzA2pYEOWASZRbApNWzAIqiKTSlT4QEsouqS2JQGXsAiqpVApCDTxgeYgtoy2OyZQJyLmAqxhAirBLbwcCAy5NgaGIYzAADnxQppL/x7ngAAAABJRU5ErkJggg==" alt=""/>
+                    <img onClick={()=>{
+                        this.props.history.push("/theatre");
+                    }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAALVBMVEUAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmaTgChpAAAAD3RSTlMA/Aa1qrzcwa+ezcijk5JAYXVXAAAAVUlEQVQoz2MYtoDNAIsghzA2pYEOWASZRbApNWzAIqiKTSlT4QEsouqS2JQGXsAiqpVApCDTxgeYgtoy2OyZQJyLmAqxhAirBLbwcCAy5NgaGIYzAADnxQppL/x7ngAAAABJRU5ErkJggg==" alt=""/>
                 </div>
                 <ul className="sta-list">
                     {
                         this.props.hotTheatreList.map((v,i)=>{
                             return (
-                                <li className="sta-list-li" key={i}>
+                                <li className="sta-list-li" key={i} onClick={()=>{
+                                    this.props.history.push("/theatreStyleCenter/" + v.id)
+                                }}>
                                     <div className="li-Box">
                                         <div className="li-Box-l">
                                             <img src={v.pic} alt=""/>
@@ -25,7 +32,9 @@ class Stadiums extends React.Component{
                                             <h3>{v.name}</h3>
                                             <p>{v.count}场在售演出</p>
                                         </div>
-                                        <span className="iconfont li-Box-r">&#xe63b;</span>
+                                        <span onClick={()=>{
+                                            this.props.history.push("/theatreStyleCenter/" + v.id)
+                                        }} className="iconfont li-Box-r">&#xe63b;</span>
                                     </div>
                                     <div className="date-li">
                                         <p>
@@ -81,4 +90,4 @@ const mapDispatchToProps = (dispatch) => {
        }
     }
 }
-export default connect(mapStateToProps,mapDispatchToProps)(Stadiums);
+export default connect(mapStateToProps,mapDispatchToProps)(withRouter(Stadiums));

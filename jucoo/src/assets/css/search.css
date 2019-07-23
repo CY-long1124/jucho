@@ -27,6 +27,7 @@
 .sssss input{
     float: left;
     border: none;
+    outline: none;
     background-color: #f5f5f5;
     width: 200px;
 }
