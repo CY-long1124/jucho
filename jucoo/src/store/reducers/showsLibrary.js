@@ -1,6 +1,6 @@
 import showsLibraryState from '../state/showsLibrary';
 import showsLibraryType from "../actionType/showsLibrary";
-
+//jfioefjioepkfoip
 export default function(state=showsLibraryState,{type,payload}){
      //console.log(5555555555,payload)
     state = JSON.parse(JSON.stringify(state));
