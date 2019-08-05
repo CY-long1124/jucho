@@ -6,6 +6,7 @@ class Myjuooo extends React.Component{
     }
     render(){
         return (
+
             <div className="info_body">
                 <div className="main_info">
 					<div className="main_info_main">
