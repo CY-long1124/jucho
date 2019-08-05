@@ -21,19 +21,19 @@ class Showinfo extends React.Component{
         }
     }
 	buyEticket(v){
-		// console.log(v,v.pic,v.schedular_id,v.show_name,v.price_range)
+		// //console.log//(v,v.pic,v.schedular_id,v.show_name,v.price_range)
 		axios.post("/login/buyEticket",{
 			show_img:v.pic,
 			show_id:v.schedular_id,
 			show_name:v.show_name,
 			show_price:v.price_range
 		}).then(({data})=>{
-			console.log(data)
+			//console.log//(data)
 		})
 	}
     render(){
         if(this.props.showinfoState.static_data){
-            console.log(this.props.showinfoState,"000");
+            //console.log//(this.props.showinfoState,"000");
             return (
                 <div className="detail">
                     {/*测试*/}
@@ -63,13 +63,13 @@ class Showinfo extends React.Component{
         }
     }
     componentWillMount(){
-        // console.log(this.props,"showinfo");
-        // console.log(this.props.match.params.showId,"uuuuuu");
+        // //console.log//(this.props,"showinfo");
+        // //console.log//(this.props.match.params.showId,"uuuuuu");
         this.props.getShowInfo(this.state.showId);
 
     }
     componentWillReceiveProps(nextProps){
-        // console.log(1111,nextProps.match.params.showId)
+        // //console.log//(1111,nextProps.match.params.showId)
         if(this.props.match.params.showId != nextProps.match.params.showId){
             this.props.getShowInfo(nextProps.match.params.showId);
         }
@@ -79,7 +79,7 @@ class Showinfo extends React.Component{
     }
 }
 function mapStateToProps(state) {
-    console.log(state.showinfoReducer.showinfoState,"yyy");
+    //console.log//(state.showinfoReducer.showinfoState,"yyy");
     return{
         showinfoState:state.showinfoReducer.showinfoState
     }
